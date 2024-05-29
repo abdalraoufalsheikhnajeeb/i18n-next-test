@@ -1,0 +1,76 @@
+.swiper-card-container {
+    position: relative;
+    z-index: 9;
+    width: 450px;
+    max-width: 90vw;
+    height: 450px;
+}
+
+
+.swiper-card-container .img-card {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    border-radius: 2.6rem;
+    transition: opacity 1s ease-in-out;
+    transform: rotate(-15deg);
+    max-width: 75vw;
+    max-height: 75vw;
+}
+
+.swiper-card-container .image-behind {
+    content: "";
+    position: absolute;
+    transform: rotate(-15deg);
+    background-color: #E5D1FF;
+    opacity: .5;
+    top: 20px;
+    left:   20px;
+    border-radius: 2.6rem;
+    width: 400px;
+    height: 400px;
+    max-width: 75vw;
+        max-height: 75vw;
+    z-index: -1;
+
+}
+
+.img-card:nth-child(1) {
+    animation: imgswiper 16s infinite;
+}
+
+.img-card:nth-child(2) {
+    animation: imgswiper 16s infinite;
+    animation-delay: 4s;
+}
+
+.img-card:nth-child(3) {
+    animation: imgswiper 16s infinite;
+    animation-delay: 8s;
+}
+
+.img-card:nth-child(4) {
+    animation: imgswiper 16s infinite;
+    animation-delay: 12s;
+}
+
+@keyframes imgswiper {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+        transform: rotate(0deg);
+
+    }
+
+    50%,
+    75% {
+        opacity: 0;
+    }
+}

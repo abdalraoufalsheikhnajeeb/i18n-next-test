@@ -1,4 +1,7 @@
 import { i18n, type Locale } from "../../i18n-config";
+import './globals.css';
+
+
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));

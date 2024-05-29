@@ -1,0 +1,78 @@
+.card-container {
+    flex-shrink: 0;
+}
+
+
+.an-card {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1.6rem;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+  
+}
+
+.relative.card-container .image-behind {
+    content: "";
+    position: absolute;
+    transform: rotate(-15deg);
+    background-color: #E5D1FF;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1.6rem;
+
+
+}
+
+.card-container:hover .image-behind {
+    transform: rotate(0deg);
+    transition: .5s;
+}
+
+.hover-text.textVisible {
+
+
+opacity: 1 !important;
+}
+.gradiant-effect.Visible {
+
+
+opacity: 1 !important;
+}
+.hover-text {
+
+    bottom: 1rem;
+    left: 1rem;
+    position: absolute;
+    color: white;
+    z-index: 60;
+    opacity: 0;
+    font-weight: bold;
+}
+
+.card-container:hover .hover-text {
+    opacity: 1;
+    transition: .3s;
+
+}
+
+.gradiant-effect {
+    position: absolute;
+    border-radius: 1.4rem;
+    top: 0;
+    width: 15rem;
+    height: 100%;
+    z-index: 50;
+    opacity: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #181634 100%);
+}
+
+.card-container:hover .gradiant-effect {
+    opacity: 1;
+        transition: .3s;
+
+}
