@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import AnFormButton from './AnFormButton';
 import Image from 'next/image';
-import { getDictionary } from '../../../get-dictionary';
+import { type getDictionary } from '../../../get-dictionary';
 const AnApplyForm = ({ dic }: { dic: Awaited<ReturnType<typeof getDictionary>> }) => {
 	const [formData, setFormData] = useState({
 		fullName: '',
@@ -33,25 +33,25 @@ const AnApplyForm = ({ dic }: { dic: Awaited<ReturnType<typeof getDictionary>> }
 		setFormErrors(errors);
 
 		if (!formData.fullName.trim()) {
-			errors.fullName = dic.required;
+			errors.fullName = dic?.required;
 			isValid = false;
 		} else if (formData.fullName.trim().length < 4) {
-			errors.fullName = dic.short;
+			errors.fullName = dic?.short;
 			isValid = false;
 		}
 
 		if (!formData.phone.trim()) {
-			errors.phone = dic.required;
+			errors.phone = dic?.required;
 			isValid = false;
 		}
 
 		if (!formData.email.trim()) {
-			errors.email = dic.required;
+			errors.email = dic?.required;
 			isValid = false;
 		} else {
 			const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 			if (!emailRegex.test(formData.email.trim())) {
-				errors.email = dic.emailValidation;
+				errors.email = dic?.emailValidation;
 				isValid = false;
 			}
 		}
@@ -71,7 +71,7 @@ const AnApplyForm = ({ dic }: { dic: Awaited<ReturnType<typeof getDictionary>> }
 				<input
 					type='text'
 					name='fullName'
-					placeholder={dic.fullName}
+					placeholder={dic?.fullName}
 					onChange={handleInputChange}
 					className={`w-full p-2 border rounded-xl placeholder-primary-900 text-primary-900 focus:outline-none ${
 						formErrors.fullName ? 'border-red-500' : 'border-neutral-400'
@@ -83,7 +83,7 @@ const AnApplyForm = ({ dic }: { dic: Awaited<ReturnType<typeof getDictionary>> }
 				<input
 					type='text'
 					name='phone'
-					placeholder={dic.phone}
+					placeholder={dic?.phone}
 					onChange={handleInputChange}
 					className={`w-full p-2 border rounded-xl placeholder-primary-900 text-primary-900 focus:outline-none ${
 						formErrors.phone ? 'border-red-500' : 'border-neutral-400'
@@ -95,7 +95,7 @@ const AnApplyForm = ({ dic }: { dic: Awaited<ReturnType<typeof getDictionary>> }
 				<input
 					type='text'
 					name='email'
-					placeholder={dic.email}
+					placeholder={dic?.email}
 					onChange={handleInputChange}
 					className={`w-full p-2 border rounded-xl placeholder-primary-900 text-primary-900 focus:outline-none ${
 						formErrors.email ? 'border-red-500' : 'border-neutral-400'
@@ -110,14 +110,14 @@ const AnApplyForm = ({ dic }: { dic: Awaited<ReturnType<typeof getDictionary>> }
 					onChange={handleInputChange}
 					className='w-full p-2 border rounded-xl placeholder-primary-900 text-primary-900 focus:outline-none appearance-none'>
 					<option value='' disabled selected>
-						{dic.country}
+						{dic?.country}
 					</option>
-					<option value='Syria'>{dic.syria}</option>
-					<option value='uae'>{dic.uae}</option>
+					<option value='Syria'>{dic?.syria}</option>
+					<option value='uae'>{dic?.uae}</option>
 				</select>
 				<div
 					className={`absolute inset-y-0 flex items-center px-3.5 pointer-events-none ${
-						dic.currLang !== 'ar' ? 'right-0' : 'left-0'
+						dic?.currLang !== 'ar' ? 'right-0' : 'left-0'
 					}`}>
 					<Image src='/images/icon-arrow-down.png' alt='icon-arrow-down' width={10} height={10} />
 				</div>
@@ -134,13 +134,13 @@ const AnApplyForm = ({ dic }: { dic: Awaited<ReturnType<typeof getDictionary>> }
 					onChange={handleCVUpload}
 					className='hidden'
 				/>
-				<span>{formData.cv ? formData.cv.name : dic.uploadCV}</span>
+				<span>{formData.cv ? formData.cv.name : dic?.uploadCV}</span>
 			</div>
 			<AnFormButton
 				className='px-16 rounded-full w-full mx-auto lg:w-auto lg:col-span-2'
 				onClick={handleFormSubmit}
 				dic={dic}>
-				{dic.apply}
+				{dic?.apply}
 			</AnFormButton>
 		</form>
 	);

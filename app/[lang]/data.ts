@@ -43,10 +43,10 @@ export const serviscesImages = [
 	{ id: 6, src: '/images/image2.png', title: 'service name' },
 ];
 
-export const projectsImages3d = [
-	{ id: 1, src: '/images/image.png', title: '3d Servic' },
-	{ id: 2, src: '/images/image2.png', title: '3d Servic' },
-	{ id: 3, src: '/images/image3.png', title: '3d Servic' },
+export const projectsImagesthreeD = [
+	{ id: 1, src: '/images/image.png', title: 'threeD Servic' },
+	{ id: 2, src: '/images/image2.png', title: 'threeD Servic' },
+	{ id: 3, src: '/images/image3.png', title: 'threeD Servic' },
 ];
 
 export const ourCharacters = [

@@ -21,7 +21,7 @@ export const CareerCard = async ({ lang, job }) => {
 					<h2 className='text-xl font-bold'>{job[`title-${lang}`]}</h2>
 					<p className='mt-2 line-clamp-2 md:line-clamp-none'>{job[`description-${lang}`]}</p>
 					<AnButton url={`/${lang}/Careers/${job.Id}`} className='hidden mt-4 md:flex'>
-						{dic.learnMore}
+						{dic?.learnMore}
 					</AnButton>
 				</div>
 			</div>

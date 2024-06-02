@@ -33,7 +33,7 @@ export default async function Project({ params: { lang, projectId } }) {
 						<p>{project?.[`desc-${lang}`]}</p>
 						<video controls className='w-full h-auto rounded-xl'>
 							<source src='/videos/sample.mp4' type='video/mp4' />
-							{dic.notSuported}
+							{dic?.notSuported}
 						</video>
 						<p>{project?.[`desc2-${lang}`]}</p>
 					</div>

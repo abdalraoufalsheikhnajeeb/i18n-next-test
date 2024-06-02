@@ -8,9 +8,9 @@
 // 	return (
 // 		<p>
 // 			This component is rendered on client:
-// 			<button onClick={() => setCount((n) => n - 1)}>{dic.decrement}</button>
+// 			<button onClick={() => setCount((n) => n - 1)}>{dic?.decrement}</button>
 // 			{count}
-// 			<button onClick={() => setCount((n) => n + 1)}>{dic.increment}</button>
+// 			<button onClick={() => setCount((n) => n + 1)}>{dic?.increment}</button>
 // 		</p>
 // 	);
 // }

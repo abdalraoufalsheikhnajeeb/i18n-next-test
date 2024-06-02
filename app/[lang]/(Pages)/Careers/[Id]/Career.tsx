@@ -36,11 +36,11 @@ export default async function Career({ params: { lang, Id } }) {
 						<AnButton
 							url={`/${lang}/Careers/${Id}/Apply`}
 							className='my-4 w-full px-16 rounded-full lg:w-auto'>
-							{dic.apply}
+							{dic?.apply}
 						</AnButton>
-						<h2 className='text-xl font-bold my-4'>{dic.mission}</h2>
+						<h2 className='text-xl font-bold my-4'>{dic?.mission}</h2>
 						<p>{job[`mission-${lang}`]}</p>
-						<h2 className='text-xl font-bold my-4'>{dic.qualifications}</h2>
+						<h2 className='text-xl font-bold my-4'>{dic?.qualifications}</h2>
 						<p>{job[`qualification-${lang}`]}</p>
 					</div>
 				</div>

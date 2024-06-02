@@ -21,7 +21,7 @@ export default async function Apply({ params: { lang, Id } }) {
 			<div className='bg-white bg-opacity-30 border border-stone-300 p-6 rounded-[35px] mx-4 my-6 md:mx-16 lg:mx-40 xl:mx-52 2xl:mx-96 backdrop-blur-xl'>
 				<div className='flex flex-col justify-center items-center gap-8'>
 					<h2 className='text-xl font-bold'>{job[`title-${lang}`]}</h2>
-					<p className='mt-2'>{dic.applyDesc}</p>
+					<p className='mt-2'>{dic?.applyDesc}</p>
 					<AnApplyForm lang={lang} />
 				</div>
 			</div>

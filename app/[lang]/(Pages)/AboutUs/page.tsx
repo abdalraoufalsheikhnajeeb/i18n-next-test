@@ -1,9 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import AnTitle from '../../components/AnTitle';
-import AnCard from '../../components/AnCard/AnCard';
-import { ourProjects } from '../../data';
-import Link from 'next/link';
 import AnPagination from '../../components/AnPagination';
 import { getDictionary } from '../../../../get-dictionary';
 
@@ -21,12 +18,12 @@ export default async function AboutUs({ params: { lang } }: { params: { lang: Lo
 					height={1080}
 				/>
 
-				<h1 className='text-4xl font-bold'>{dic.whoWeAre}</h1>
-				<p className=' max-w-5xl w-[85vw] mx-auto text-center'>{dic.AboutAyatAnimation}</p>
+				<h1 className='text-4xl font-bold'>{dic?.whoWeAre}</h1>
+				<p className=' max-w-5xl w-[85vw] mx-auto text-center'>{dic?.AboutAyatAnimation}</p>
 			</header>
 			<section className='max-w-7xl w-[85vw] mx-auto  min-h-[90vh]  flex flex-col gap-20 items-center '>
-				<AnTitle title={dic.ourPortfolio} />
-				<AnPagination lang={lang} />
+				<AnTitle title={dic?.ourPortfolio} />
+				<AnPagination dic={dic} />
 			</section>
 		</div>
 	);

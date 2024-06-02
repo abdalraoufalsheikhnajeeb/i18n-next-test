@@ -1,10 +1,8 @@
-'use client'
-import  {useState} from 'react'
+'use client';
+import { useState } from 'react';
 import AnFormButton from './AnFormButton';
-import { getDictionary } from '../../../get-dictionary';
-const ContactForm = async ({  dic }: {  dic: Awaited<ReturnType<typeof getDictionary>>}) => {
-
-
+import { type getDictionary } from '../../../get-dictionary';
+const ContactForm = async ({ dic }: { dic: Awaited<ReturnType<typeof getDictionary>> }) => {
 	const [formData, setFormData] = useState({
 		fullName: '',
 		email: '',
@@ -31,29 +29,29 @@ const ContactForm = async ({  dic }: {  dic: Awaited<ReturnType<typeof getDictio
 		setFormErrors(errors);
 
 		if (!formData.fullName.trim()) {
-			errors.fullName = dic.required;
+			errors.fullName = dic?.required;
 			isValid = false;
 		} else if (formData.fullName.trim().length < 4) {
-			errors.fullName = dic.short;
+			errors.fullName = dic?.short;
 			isValid = false;
 		}
 
 		if (!formData.email.trim()) {
-			errors.email = dic.required;
+			errors.email = dic?.required;
 			isValid = false;
 		} else {
 			const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 			if (!emailRegex.test(formData.email.trim())) {
-				errors.email = dic.emailValidation;
+				errors.email = dic?.emailValidation;
 				isValid = false;
 			}
 		}
 
 		if (!formData.message.trim()) {
-			errors.message = dic.required;
+			errors.message = dic?.required;
 			isValid = false;
 		} else if (formData.message.trim().length < 4) {
-			errors.message = dic.short;
+			errors.message = dic?.short;
 			isValid = false;
 		}
 
@@ -74,7 +72,7 @@ const ContactForm = async ({  dic }: {  dic: Awaited<ReturnType<typeof getDictio
 					type='text'
 					id='fullName'
 					name='fullName'
-					placeholder={dic.fullName}
+					placeholder={dic?.fullName}
 					value={formData.fullName}
 					onChange={handleInputChange}
 					className={`w-full p-2 border rounded-xl placeholder-primary-900 text-primary-900 focus:outline-none ${
@@ -88,7 +86,7 @@ const ContactForm = async ({  dic }: {  dic: Awaited<ReturnType<typeof getDictio
 					type='text'
 					id='email'
 					name='email'
-					placeholder={dic.email}
+					placeholder={dic?.email}
 					value={formData.email}
 					onChange={handleInputChange}
 					className={`w-full p-2 border rounded-xl placeholder-primary-900 text-primary-900 focus:outline-none ${
@@ -101,7 +99,7 @@ const ContactForm = async ({  dic }: {  dic: Awaited<ReturnType<typeof getDictio
 				<textarea
 					id='message'
 					name='message'
-					placeholder={dic.message}
+					placeholder={dic?.message}
 					rows={5}
 					value={formData.message}
 					onChange={handleInputChange}
@@ -115,10 +113,8 @@ const ContactForm = async ({  dic }: {  dic: Awaited<ReturnType<typeof getDictio
 				<AnFormButton
 					dic={dic}
 					className='px-16 rounded-full w-full mx-auto lg:w-auto'
-					onClick={handleFormSubmit}
-				>
-					{dic.send}
-					
+					onClick={handleFormSubmit}>
+					{dic?.send}
 				</AnFormButton>
 			</div>
 		</form>

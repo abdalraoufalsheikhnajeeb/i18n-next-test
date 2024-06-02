@@ -1,7 +1,7 @@
 {
-  "currLang" : "en",
+  "currLang": "en",
   "lang": "العربية",
-  "/": "Home",
+  "Home": "Home",
   "OurWorld": "Our World",
   "AboutUs": "About us",
   "Careers": "Careers",
@@ -42,7 +42,7 @@
   "whoWeAre": " who we are",
   "AboutAyatAnimation": "Company established in 2018 that works on designing and implementing 3D animation films and videos with all the accompanying services from designing characters and scenarios in addition to Explainer videos and advertisements that serve the marketing goals of companies with the latest technologies according to international standards",
   "ourPortfolio": " our Portfolio",
-  "3d": "3D animation services",
+  "threeD": "3D animation services",
   "ourServices": "Our Services",
   "weProduce": "So we produce for you",
   "ourCharacters": "Our characters",
@@ -50,5 +50,6 @@
   "notSuported": "Your browser does not support the video tag",
   "notFound": "Error 404",
   "notFoundDesc": "Sorry, page not found!",
-  "returnHome": "Return Home"
+  "returnHome": "Return Home",
+  "OurWorkShop": "Our WorkShop Activities"
 }

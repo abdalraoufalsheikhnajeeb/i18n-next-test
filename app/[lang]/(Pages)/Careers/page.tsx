@@ -4,13 +4,8 @@ import { CareerCard } from './CareerCard';
 import { jobs } from '../../data';
 import { getDictionary } from '../../../../get-dictionary';
 
-export default async function Careers({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-  } ) {
-		const dic = await getDictionary(lang);
-
+export default async function Careers({ params: { lang } }: { params: { lang: Locale } }) {
+	const dic = await getDictionary(lang);
 
 	return (
 		<>
@@ -24,8 +19,8 @@ export default async function Careers({
 				/>
 
 				<Image width={174} height={120} src='/images/logo.png' alt='Logo' />
-				<h1 className='text-4xl font-bold'>{dic.careersTitle}</h1>
-				<p className='max-w-4xl text-center px-4'>{dic.careersDesc}</p>
+				<h1 className='text-4xl font-bold'>{dic?.careersTitle}</h1>
+				<p className='max-w-4xl text-center px-4'>{dic?.careersDesc}</p>
 			</div>
 			<div className=' my-12 flex flex-col items-center gap-8 max-w-sm md:max-w-[95rem] px-8 mx-auto'>
 				{jobs.map((job) => (

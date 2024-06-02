@@ -1,16 +1,16 @@
 'use client';
-import { i18n } from '../../../i18n-config';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { navLinks } from '../data';
-import { Locale } from '../../../i18n-config';
-import { getDictionary } from '../../../get-dictionary';
+import { type getDictionary } from '../../../get-dictionary';
+import LocaleSwitcher from './locale-switcher';
 
-const Navbar = ({ params: { lang } , dic }: { params: { lang: Locale }; dic: Awaited<ReturnType<typeof getDictionary>> }) => {
+const Navbar = ({ dic }: { dic: Awaited<ReturnType<typeof getDictionary>> }) => {
 	const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+	const lang = dic?.currLang;
 	const isMobile = useMediaQuery({ query: '(max-width: 1024px)' });
 	const toggleBurger = () => {
 		setIsBurgerOpen(!isBurgerOpen);
@@ -56,51 +56,43 @@ const Navbar = ({ params: { lang } , dic }: { params: { lang: Locale }; dic: Awa
 			/>
 
 			<div className='hidden lg:flex ms-10  items-baseline space-x-4'>
-				{navLinks.map((navLink) => (
-					<Link
-						key={navLink.url}
-						onClick={() => {
-							setSelectedPageIndex(navLink.index);
-						}}
-						href={`/${lang}/${navLink.url}`}
-						className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md ${
-							selectedPageIndex === navLink.index ? 'font-bold' : ''
-						}`}>
-						{`${dic}.${navLink.url}`}
-						{selectedPageIndex === navLink.index && (
-							<div className='absolute left-1/2 -translate-x-1/2  bottom-1 bg-white w-8 h-[2px]'>
-								{' '}
-							</div>
-						)}
-					</Link>
-				))}
+				<Link
+					className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
+						pathname === '/' ? 'active' : ''
+					}`}
+					href={`/${lang}`}>
+					{dic?.Home}
+				</Link>
+				<Link
+					className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
+						pathname === '/about' ? 'active' : ''
+					}`}
+					href={`/${lang}/AboutUs`}>
+					{dic?.AboutUs}
+				</Link>
+				<Link
+					className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
+						pathname === '/about' ? 'active' : ''
+					}`}
+					href={`/${lang}/Careers`}>
+					{dic?.Careers}
+				</Link>
+				<Link
+					className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
+						pathname === '/about' ? 'active' : ''
+					}`}
+					href={`/${lang}/OurWorld`}>
+					{dic?.OurWorld}
+				</Link>
 			</div>
 			<div className='flex items-center h-14 gap-4'>
-				{i18n.locales
-					.filter((l) => lang !== l)
-					.map((l, index) => {
-						return (
-							<Link
-								className={`flex items-center justify-center ${
-									lang === 'en' ? 'font-ar' : 'font-en'
-								} self-end   gap-3`}
-								href={`/${l}`}
-								key={l}>
-								<Image
-									src={`/images/${lang}.png`}
-									width={50}
-									height={50}
-									alt='language'
-									className='rounded-lg'
-								/>
-								{dic.lang}
-							</Link>
-						);
-					})}
+				<LocaleSwitcher />
 				<Link
 					href={`/${lang}/ContactUs`}
-					className=' w-52 hidden border-solid border-white shadow-[0px_23px_32px_0px_rgba(104,_42,_97,_0.26)] lg:flex lg:flex-row lg:justify-center pt-3 h-12 items-start border-2 rounded-[32px]'>
-					<span className='text-center font-bold text-white'>{dic.getInTouch}</span>
+					className={`w-52 text-white hidden border-solid border-white shadow-[0px_23px_32px_0px_rgba(104,_42,_97,_0.26)] lg:flex lg:flex-row lg:justify-center pt-3 h-12 items-start border-2 rounded-[32px] ${
+						pathname === `/${lang}/ContactUs` ? 'active' : ''
+					}`}>
+					{dic?.getInTouch}
 				</Link>
 				<Image
 					className={`cursor-pointer ${
@@ -116,31 +108,40 @@ const Navbar = ({ params: { lang } , dic }: { params: { lang: Locale }; dic: Awa
 			{isBurgerOpen && (
 				<>
 					<div className='nav-items-container'>
-						{navLinks.map((navLink) => (
-							<Link
-								key={navLink.url}
-								onClick={() => {
-									setSelectedPageIndex(navLink.index);
-									setIsBurgerOpen(false);
-								}}
-								href={`/${lang}/${navLink.url}`}
-								className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md ${
-									selectedPageIndex === navLink.index ? 'font-bold' : ''
-								}`}>
-								{`${dic}.${navLink.url}`}
-								{selectedPageIndex === navLink.index && (
-									<div className='absolute left-1/2 -translate-x-1/2  bottom-1 bg-white w-8 h-[2px]'>
-										{' '}
-									</div>
-								)}
-							</Link>
-						))}
+						<Link
+							className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
+								pathname === '/' ? 'active' : ''
+							}`}
+							href={`/${lang}`}>
+							{dic?.Home}
+						</Link>
+						<Link
+							className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
+								pathname === '/about' ? 'active' : ''
+							}`}
+							href={`/${lang}/AboutUs`}>
+							{dic?.AboutUs}
+						</Link>
+						<Link
+							className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
+								pathname === '/about' ? 'active' : ''
+							}`}
+							href={`/${lang}/Careers`}>
+							{dic?.Careers}
+						</Link>
+						<Link
+							className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
+								pathname === '/about' ? 'active' : ''
+							}`}
+							href={`/${lang}/OurWorld`}>
+							{dic?.OurWorld}
+						</Link>
 						<Link
 							href={`/${lang}/ContactUs`}
 							className=' w-[80vw] flex  bg-white shadow-[0px_23px_32px_0px_rgba(104,_42,_97,_0.26)]  justify-center items-center  h-12  mt-48 rounded-[32px]'
 							onClick={toggleBurger}>
 							<span className='text-center font-bold text-primary-500'>
-								{dic.getInTouch}
+								{dic?.getInTouch}
 							</span>
 						</Link>
 					</div>

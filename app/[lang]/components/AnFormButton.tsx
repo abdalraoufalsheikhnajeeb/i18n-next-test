@@ -1,6 +1,6 @@
 'use client'
 
-import { getDictionary } from "../../../get-dictionary";
+import { type getDictionary } from '../../../get-dictionary';
 
 type Props = {
 	children: any;
