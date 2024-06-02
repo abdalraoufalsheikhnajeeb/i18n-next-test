@@ -3,6 +3,7 @@ import Image from 'next/image';
 import AnTitle from '../../components/AnTitle';
 import AnPagination from '../../components/AnPagination';
 import { getDictionary } from '../../../../get-dictionary';
+import { Locale } from '../../../../i18n-config';
 
 export default async function AboutUs({ params: { lang } }: { params: { lang: Locale } }) {
 	const dic = await getDictionary(lang);
