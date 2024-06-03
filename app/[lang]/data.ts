@@ -93,8 +93,26 @@ export const oldProjects = [
 		2018: [
 			{
 				'title-en': 'DomCare Medical World',
+
+				'title-ru': 'DomCare Medical World',
 				'title-ar': ' دوم كير',
 				'desc-en':
+					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
+				'desc-ru':
+					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
+
+				'desc-ar':
+					'الخطاب يهدف إلى إعطاء صورة ذهنية لشيء من ذوي الخبرة. جميلة فوق الوصف . وقدم وصفا دقيقا لما رآه.',
+				pic: '/images/project.png',
+			},
+			{
+				'title-en': 'DomCare Medical World',
+
+				'title-ru': 'DomCare Medical World',
+				'title-ar': ' دوم كير',
+				'desc-en':
+					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
+				'desc-ru':
 					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
 				'desc-ar':
 					'الخطاب يهدف إلى إعطاء صورة ذهنية لشيء من ذوي الخبرة. جميلة فوق الوصف . وقدم وصفا دقيقا لما رآه.',
@@ -102,8 +120,12 @@ export const oldProjects = [
 			},
 			{
 				'title-en': 'DomCare Medical World',
+
+				'title-ru': 'DomCare Medical World',
 				'title-ar': ' دوم كير',
 				'desc-en':
+					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
+				'desc-ru':
 					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
 				'desc-ar':
 					'الخطاب يهدف إلى إعطاء صورة ذهنية لشيء من ذوي الخبرة. جميلة فوق الوصف . وقدم وصفا دقيقا لما رآه.',
@@ -111,8 +133,12 @@ export const oldProjects = [
 			},
 			{
 				'title-en': 'DomCare Medical World',
+
+				'title-ru': 'DomCare Medical World',
 				'title-ar': ' دوم كير',
 				'desc-en':
+					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
+				'desc-ru':
 					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
 				'desc-ar':
 					'الخطاب يهدف إلى إعطاء صورة ذهنية لشيء من ذوي الخبرة. جميلة فوق الوصف . وقدم وصفا دقيقا لما رآه.',
@@ -120,17 +146,12 @@ export const oldProjects = [
 			},
 			{
 				'title-en': 'DomCare Medical World',
+
+				'title-ru': 'DomCare Medical World',
 				'title-ar': ' دوم كير',
 				'desc-en':
 					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
-				'desc-ar':
-					'الخطاب يهدف إلى إعطاء صورة ذهنية لشيء من ذوي الخبرة. جميلة فوق الوصف . وقدم وصفا دقيقا لما رآه.',
-				pic: '/images/project.png',
-			},
-			{
-				'title-en': 'DomCare Medical World',
-				'title-ar': ' دوم كير',
-				'desc-en':
+				'desc-ru':
 					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
 				'desc-ar':
 					'الخطاب يهدف إلى إعطاء صورة ذهنية لشيء من ذوي الخبرة. جميلة فوق الوصف . وقدم وصفا دقيقا لما رآه.',
@@ -140,8 +161,12 @@ export const oldProjects = [
 		2020: [
 			{
 				'title-en': 'DomCare Medical World',
+
+				'title-ru': 'DomCare Medical World',
 				'title-ar': ' دوم كير',
 				'desc-en':
+					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
+				'desc-ru':
 					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
 				'desc-ar':
 					'الخطاب يهدف إلى إعطاء صورة ذهنية لشيء من ذوي الخبرة. جميلة فوق الوصف . وقدم وصفا دقيقا لما رآه.',
@@ -149,8 +174,12 @@ export const oldProjects = [
 			},
 			{
 				'title-en': 'DomCare Medical World',
+
+				'title-ru': 'DomCare Medical World',
 				'title-ar': ' دوم كير',
 				'desc-en':
+					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
+				'desc-ru':
 					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
 				'desc-ar':
 					'الخطاب يهدف إلى إعطاء صورة ذهنية لشيء من ذوي الخبرة. جميلة فوق الوصف . وقدم وصفا دقيقا لما رآه.',
@@ -158,8 +187,12 @@ export const oldProjects = [
 			},
 			{
 				'title-en': 'DomCare Medical World',
+
+				'title-ru': 'DomCare Medical World',
 				'title-ar': ' دوم كير',
 				'desc-en':
+					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
+				'desc-ru':
 					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
 				'desc-ar':
 					'الخطاب يهدف إلى إعطاء صورة ذهنية لشيء من ذوي الخبرة. جميلة فوق الوصف . وقدم وصفا دقيقا لما رآه.',
@@ -169,8 +202,12 @@ export const oldProjects = [
 		2022: [
 			{
 				'title-en': 'DomCare Medical World',
+
+				'title-ru': 'DomCare Medical World',
 				'title-ar': ' دوم كير',
 				'desc-en':
+					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
+				'desc-ru':
 					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
 				'desc-ar':
 					'الخطاب يهدف إلى إعطاء صورة ذهنية لشيء من ذوي الخبرة. جميلة فوق الوصف . وقدم وصفا دقيقا لما رآه.',
@@ -178,8 +215,12 @@ export const oldProjects = [
 			},
 			{
 				'title-en': 'DomCare Medical World',
+
+				'title-ru': 'DomCare Medical World',
 				'title-ar': ' دوم كير',
 				'desc-en':
+					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
+				'desc-ru':
 					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
 				'desc-ar':
 					'الخطاب يهدف إلى إعطاء صورة ذهنية لشيء من ذوي الخبرة. جميلة فوق الوصف . وقدم وصفا دقيقا لما رآه.',
@@ -187,8 +228,12 @@ export const oldProjects = [
 			},
 			{
 				'title-en': 'DomCare Medical World',
+
+				'title-ru': 'DomCare Medical World',
 				'title-ar': ' دوم كير',
 				'desc-en':
+					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
+				'desc-ru':
 					'discourse intended to give a mental image of something experienced. beautiful beyond description. gave an accurate description of what he saw. ',
 				'desc-ar':
 					'الخطاب يهدف إلى إعطاء صورة ذهنية لشيء من ذوي الخبرة. جميلة فوق الوصف . وقدم وصفا دقيقا لما رآه.',
@@ -202,6 +247,7 @@ export const projects = [
 		Id: 0,
 		'title-ar': 'مشروع 1',
 		'title-en': 'Project 1',
+		'title-ru': 'Project 1',
 		'desc-ar':
 			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
 		'desc-en':
@@ -216,6 +262,7 @@ export const projects = [
 		Id: 1,
 		'title-ar': 'مشروع 2',
 		'title-en': 'Project 2',
+		'title-ru': 'Project 2',
 		'desc-ar':
 			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
 		'desc-en':
@@ -230,6 +277,7 @@ export const projects = [
 		Id: 2,
 		'title-ar': 'مشروع 3',
 		'title-en': 'Project 3',
+		'title-ru': 'Project 3',
 		'desc-ar':
 			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
 		'desc-en':
@@ -244,6 +292,7 @@ export const projects = [
 		Id: 3,
 		'title-ar': 'مشروع 4',
 		'title-en': 'Project 4',
+		'title-ru': 'Project 4',
 		'desc-ar':
 			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
 		'desc-en':
@@ -258,6 +307,7 @@ export const projects = [
 		Id: 4,
 		'title-ar': 'مشروع 5',
 		'title-en': 'Project 5',
+		'title-ru': 'Project 5',
 		'desc-ar':
 			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
 		'desc-en':
@@ -272,6 +322,7 @@ export const projects = [
 		Id: 5,
 		'title-ar': 'مشروع 6',
 		'title-en': 'Project 6',
+		'title-ru': 'Project 6',
 		'desc-ar':
 			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
 		'desc-en':
@@ -286,6 +337,7 @@ export const projects = [
 		Id: 6,
 		'title-ar': 'مشروع 7',
 		'title-en': 'Project 7',
+		'title-ru': 'Project 7',
 		'desc-ar':
 			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
 		'desc-en':
@@ -300,6 +352,7 @@ export const projects = [
 		Id: 7,
 		'title-ar': 'مشروع 8',
 		'title-en': 'Project 8',
+		'title-ru': 'Project 8',
 		'desc-ar':
 			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
 		'desc-en':
@@ -316,6 +369,7 @@ export const jobs = [
 		Id: 0,
 		'title-ar': 'مهندس أتمتة ضمان الجودة',
 		'title-en': 'Quality Assurance Automation Engineer',
+		'title-ru': 'Quality Assurance Automation Engineer',
 		'description-ar':
 			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
 		'description-en':
@@ -334,6 +388,7 @@ export const jobs = [
 		Id: 1,
 		'title-ar': 'مهندس أتمتة ضمان الجودة',
 		'title-en': 'Quality Assurance Automation Engineer',
+		'title-ru': 'Quality Assurance Automation Engineer',
 		'description-ar':
 			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
 		'description-en':
@@ -352,6 +407,7 @@ export const jobs = [
 		Id: 2,
 		'title-ar': 'مهندس أتمتة ضمان الجودة',
 		'title-en': 'Quality Assurance Automation Engineer',
+		'title-ru': 'Quality Assurance Automation Engineer',
 		'description-ar':
 			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
 		'description-en':

@@ -1,5 +1,5 @@
 import AnApplyForm from '@/app/[lang]/components/AnApplyForm';
-import { jobs } from '@/app/[lang]/data';
+import { jobs } from '../../../../data.ts';
 import Image from 'next/image';
 import { getDictionary } from '../../../../../../get-dictionary';
 
