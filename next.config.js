@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 
-
 const nextConfig = {
 	output: "export",
+	images: {
+		unoptimized: true
+	},
 	async redirects()
 	{
 		return [
@@ -11,11 +13,10 @@ const nextConfig = {
 				destination: '/en',
 				permanent: true,
 			},
-		]
+		];
 	},
 }
 
-module.exports = nextConfig
-
+module.exports = nextConfig;
 
 
