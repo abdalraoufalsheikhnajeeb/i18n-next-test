@@ -1,15 +1,25 @@
 import Image from 'next/image';
-import AnButton from '@/app/[lang]/components/AnButton';
-import { jobs } from '@/app/[lang]/data';
+import AnButton from '../../../components/AnButton';
+import { jobs, Job } from '../../../data';
 import { getDictionary } from '../../../../../get-dictionary';
+import { Locale } from '../../../../../i18n-config.ts';
+interface CareerProps {
+	params: {
+		lang: Locale;
+		Id: string;
+	};
+}
 
-export default async function Career({ params: { lang, Id } }) {
-	const job = jobs.find((job) => {
-		return job.Id === Number(Id);
-	});
+export default async function Career({ params: { lang, Id } }: CareerProps) {
+	const job: Job | undefined = jobs.find((job) => job.Id === Number(Id));
+	if (!job) {
+		return <div>Job not found</div>; // Handle job not found
+	}
+
 	const dic = await getDictionary(lang);
+
 	return (
-		<div className=' min-h-screen bg-center pt-24'>
+		<div className='min-h-screen bg-center pt-24'>
 			<Image
 				src='/images/bg-home.png'
 				className='fixed w-full h-full object-cover top-0 left-0 -z-10'
@@ -36,11 +46,11 @@ export default async function Career({ params: { lang, Id } }) {
 						<AnButton
 							url={`/${lang}/Careers/${Id}/Apply`}
 							className='my-4 w-full px-16 rounded-full lg:w-auto'>
-							{dic?.apply}
+							{dic.apply}
 						</AnButton>
-						<h2 className='text-xl font-bold my-4'>{dic?.mission}</h2>
+						<h2 className='text-xl font-bold my-4'>{dic.mission}</h2>
 						<p>{job[`mission-${lang}`]}</p>
-						<h2 className='text-xl font-bold my-4'>{dic?.qualifications}</h2>
+						<h2 className='text-xl font-bold my-4'>{dic.qualifications}</h2>
 						<p>{job[`qualification-${lang}`]}</p>
 					</div>
 				</div>

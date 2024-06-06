@@ -364,62 +364,71 @@ export const projects = [
 		icon: '/images/image4.png',
 	},
 ];
-export const jobs = [
-	{
-		Id: 0,
-		'title-ar': 'مهندس أتمتة ضمان الجودة',
-		'title-en': 'Quality Assurance Automation Engineer',
-		'title-ru': 'Quality Assurance Automation Engineer',
-		'description-ar':
-			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
-		'description-en':
-			'We are looking for a researcher and editor in the field of companies and financial markets for the Arab Fortune platform, who will undertake research tasks and prepare profiles for companies based on their financial performance. The researcher and editor in the field of companies and financial markets is directly responsible for preparing lists.',
-		'mission-ar':
-			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
-		'mission-en':
-			'We are looking for a researcher and editor in the field of companies and financial markets for the Arab Fortune platform, who will undertake research tasks and prepare profiles for companies based on their financial performance. The researcher and editor in the field of companies and financial markets is directly responsible for preparing lists.',
-		'qualification-ar':
-			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
-		'qualification-en':
-			'We are looking for a researcher and editor in the field of companies and financial markets for the Arab Fortune platform, who will undertake research tasks and prepare profiles for companies based on their financial performance. The researcher and editor in the field of companies and financial markets is directly responsible for preparing lists.',
-		icon: '/images/C1.png',
-	},
+export interface Job {
+	Id: number;
+	'title-en': string;
+	'title-ar': string;
+	'title-ru': string;
+	'description-en': string;
+	'description-ar': string;
+	'description-ru': string;
+	'mission-en': string;
+	'mission-ar': string;
+	'mission-ru': string;
+	'qualification-en': string;
+	'qualification-ar': string;
+	'qualification-ru': string;
+	icon: string;
+}
+
+export const jobs: Job[] = [
 	{
 		Id: 1,
-		'title-ar': 'مهندس أتمتة ضمان الجودة',
-		'title-en': 'Quality Assurance Automation Engineer',
-		'title-ru': 'Quality Assurance Automation Engineer',
-		'description-ar':
-			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
-		'description-en':
-			'We are looking for a researcher and editor in the field of companies and financial markets for the Arab Fortune platform, who will undertake research tasks and prepare profiles for companies based on their financial performance. The researcher and editor in the field of companies and financial markets is directly responsible for preparing lists.',
-		'mission-ar':
-			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
-		'mission-en':
-			'We are looking for a researcher and editor in the field of companies and financial markets for the Arab Fortune platform, who will undertake research tasks and prepare profiles for companies based on their financial performance. The researcher and editor in the field of companies and financial markets is directly responsible for preparing lists.',
-		'qualification-ar':
-			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
-		'qualification-en':
-			'We are looking for a researcher and editor in the field of companies and financial markets for the Arab Fortune platform, who will undertake research tasks and prepare profiles for companies based on their financial performance. The researcher and editor in the field of companies and financial markets is directly responsible for preparing lists.',
+		'title-en': 'Software Engineer',
+		'title-ar': 'مهندس برمجيات',
+		'title-ru': 'Инженер-программист',
+		'description-en': 'We are looking for a skilled Software Engineer to join our team.',
+		'description-ar': 'نحن نبحث عن مهندس برمجيات ماهر للانضمام إلى فريقنا.',
+		'description-ru': 'Мы ищем опытного инженера-программиста, чтобы присоединиться к нашей команде.',
+		'mission-en': 'Develop and maintain software applications.',
+		'mission-ar': 'تطوير وصيانة تطبيقات البرمجيات.',
+		'mission-ru': 'Разрабатывать и поддерживать программные приложения.',
+		'qualification-en': "Bachelor's degree in Computer Science or related field.",
+		'qualification-ar': 'درجة البكالوريوس في علوم الكمبيوتر أو مجال ذي صلة.',
+		'qualification-ru': 'Степень бакалавра в области компьютерных наук или смежной области.',
 		icon: '/images/C1.png',
 	},
 	{
 		Id: 2,
-		'title-ar': 'مهندس أتمتة ضمان الجودة',
-		'title-en': 'Quality Assurance Automation Engineer',
-		'title-ru': 'Quality Assurance Automation Engineer',
-		'description-ar':
-			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
-		'description-en':
-			'We are looking for a researcher and editor in the field of companies and financial markets for the Arab Fortune platform, who will undertake research tasks and prepare profiles for companies based on their financial performance. The researcher and editor in the field of companies and financial markets is directly responsible for preparing lists.',
-		'mission-ar':
-			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
-		'mission-en':
-			'We are looking for a researcher and editor in the field of companies and financial markets for the Arab Fortune platform, who will undertake research tasks and prepare profiles for companies based on their financial performance. The researcher and editor in the field of companies and financial markets is directly responsible for preparing lists.',
-		'qualification-ar':
-			'نبحث عن باحث ومحرر في مجال الشركات والأسواق المالية لمنصة Arab Fortune، والذي سيتولى المهام البحثية وإعداد الملفات التعريفية للشركات بناءً على أدائها المالي. الباحث والمحرر في مجال الشركات والأسواق المالية هو المسؤول المباشر عن إعداد القوائم.',
-		'qualification-en':
-			'We are looking for a researcher and editor in the field of companies and financial markets for the Arab Fortune platform, who will undertake research tasks and prepare profiles for companies based on their financial performance. The researcher and editor in the field of companies and financial markets is directly responsible for preparing lists.',
+		'title-en': 'Project Manager',
+		'title-ar': 'مدير مشروع',
+		'title-ru': 'Руководитель проекта',
+		'description-en': 'Join our team as a Project Manager to oversee project execution.',
+		'description-ar': 'انضم إلى فريقنا كمدير مشروع للإشراف على تنفيذ المشروع.',
+		'description-ru':
+			'Присоединяйтесь к нашей команде в качестве руководителя проекта, чтобы контролировать выполнение проекта.',
+		'mission-en': 'Manage project timelines and deliverables.',
+		'mission-ar': 'إدارة الجداول الزمنية للمشروع والتسليمات.',
+		'mission-ru': 'Управлять сроками и результатами проекта.',
+		'qualification-en': 'Experience in project management and a related degree.',
+		'qualification-ar': 'الخبرة في إدارة المشاريع ودرجة ذات صلة.',
+		'qualification-ru': 'Опыт управления проектами и соответствующая степень.',
+		icon: '/images/C1.png',
+	},
+	{
+		Id: 3,
+		'title-en': 'Data Analyst',
+		'title-ar': 'محلل بيانات',
+		'title-ru': 'Аналитик данных',
+		'description-en': 'Seeking a Data Analyst to interpret complex datasets.',
+		'description-ar': 'نسعى إلى محلل بيانات لتفسير مجموعات البيانات المعقدة.',
+		'description-ru': 'Ищем аналитика данных для интерпретации сложных наборов данных.',
+		'mission-en': 'Analyze data to inform business decisions.',
+		'mission-ar': 'تحليل البيانات لإبلاغ قرارات العمل.',
+		'mission-ru': 'Анализировать данные для информирования бизнес-решений.',
+		'qualification-en': 'Proficiency in data analysis tools and techniques.',
+		'qualification-ar': 'الإلمام بأدوات وتقنيات تحليل البيانات.',
+		'qualification-ru': 'Знание инструментов и методов анализа данных.',
 		icon: '/images/C1.png',
 	},
 ];
