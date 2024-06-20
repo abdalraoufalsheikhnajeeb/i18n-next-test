@@ -1,7 +1,7 @@
 import { carouselImages } from '../../data';
 import './AnImageSwiper.css';
 import Image from 'next/image';
-const AnImageSwiper = ({ imageSize }) => {
+const AnImageSwiper = ({ imageSize } : {imageSize : number}) => {
 
 	return (
 		<div className='swiper-card-container'>

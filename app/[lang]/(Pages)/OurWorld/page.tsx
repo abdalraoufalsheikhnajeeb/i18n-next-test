@@ -76,7 +76,7 @@ export default async function OurWorld({ params: { lang } }: { params: { lang: L
 			<div className='max-w-7xl w-[85vw] mx-auto gap-28 flex flex-col justify-center items-end'>
 				<OurServices dic={dic} services={services} lang={lang} />
 				<WorkShops dic={dic} workshops={workshops} lang={lang} />
-				<OldProjects dic={dic} oldProjects={oldProjects} lang={lang} />
+				
 			</div>
 		</>
 	);

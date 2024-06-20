@@ -8,17 +8,10 @@ import { Locale } from '../../../../i18n-config';
 export default async function AboutUs({ params: { lang } }: { params: { lang: Locale } }) {
 	const dic = await getDictionary(lang);
 	return (
-		<div className='    gap-4 flex flex-col justify-center items-end'>
-			<header className='relative  min-h-[90vh] flex flex-col gap-10 justify-end items-center  pb-28  h-screen   w-full'>
+		<div className=' gap-4 flex flex-col justify-center items-end'>
+			<header className='relative  h-screen flex flex-col gap-10 justify-end items-center  pb-28   bg-hero2 bg-center bg-cover h-screen bg-no-repeat   w-full'>
 				<Image src='/images/logo.png' alt='arrow' width={174} height={120} />
-				<Image
-					src='/images/bg2.webp'
-					className='absolute w-full h-full object-cover top-0 left-0 -z-10'
-					alt='bg'
-					width={1920}
-					height={1080}
-				/>
-
+				
 				<h1 className='text-4xl font-bold'>{dic?.whoWeAre}</h1>
 				<p className=' max-w-5xl w-[85vw] mx-auto text-center'>{dic?.AboutAyatAnimation}</p>
 			</header>

@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 import { i18n, type Locale } from "../../i18n-config";
 import './globals.css';
-
-import localFont from 'next/font/local';
 import { getDictionary } from "../../get-dictionary";
 import Navbar from "./components/NavBar";
 import { Footer } from "./components/Footer";
@@ -11,24 +9,9 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
- 
-const cairo = localFont({
-	src: [
-		{
-			path: '../../public/fonts/Cairo-Regular.woff2',
-			weight: '400',
-			style: 'normal',
-		},
-		{
-			path: '../../public/fonts/Cairo-Bold.woff2',
-			weight: '700',
-			style: 'normal',
-		},
-	],
-});
 export const metadata: Metadata = {
-	title: 'i18n within app directory - Vercel Examples',
-	description: 'How to do i18n in Next.js 13 within app directory',
+	title: 'Alnujoom almasiya',
+	description: '',
 };
 export default async function Root({
   children,
@@ -41,7 +24,7 @@ export default async function Root({
   const dic = await getDictionary(params.lang);
   return (
 		<html lang={params.lang}>
-			<body className={` bg-[#08052A] overflow-x-hidden ${cairo.className}`}>
+			<body dir={params.lang === "ar" ? "rtl" : "ltr"} className={` bg-[#0b1b36] overflow-x-hidden `}> 
 				<Navbar  dic={dic} />
 				{children}
 				<Footer params={params} />

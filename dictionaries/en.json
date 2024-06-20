@@ -6,11 +6,10 @@
   "AboutUs": "About us",
   "Careers": "Careers",
   "getInTouch": "Get in touch",
-  "homeText": "Create New And lovely world that takes you ",
-  "ayatAnimation": "ayat Animation",
-  "prev1": " is a company that works to create new worlds that tell lovely and distinctive stories that take you",
-  "prev2": "It is specialized in short and long animation movies(2D-3D), Advertisements and Marketing in TV and Social Media",
-  "someProjects": "Some of Our Latest Projects",
+  "homeText": "Discover Amazing Destinations That Take You Beyond the Ordinary",
+  "ayatAnimation": "Diamond Stars Travel & Tourism",
+  "prev1": ", managed by Farouk Dakak, is an authorized agent for Cham Wings. We offer comprehensive tourism services and exceptional flights at the best prices, focusing on quality service and customer satisfaction. Discover the world with us safely and comfortably.",
+  "someProjects": "Some of Our Services",
   "moreProjects": "More projects",
   "followUs": "Follow us on",
   "copyRights": "© 2023  Ayat Animation. All Rights Reserved ",
@@ -18,7 +17,7 @@
   "terms": " Terms & Conditions",
   "latestWorkshops": "Latest Workshops & Events",
   "showReel": "Show Reel",
-  "some": "Some of Our Latest Projects",
+  "some": "Some of Our Services",
   "send": "Send",
   "fullName": "Full Name",
   "email": "Email",
@@ -51,5 +50,6 @@
   "notFound": "Error 404",
   "notFoundDesc": "Sorry, page not found!",
   "returnHome": "Return Home",
-  "OurWorkShop": "Our WorkShop Activities"
+  "OurWorkShop": "Our WorkShop Activities",
+  "readmore" : "Read More"
 }

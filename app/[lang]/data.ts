@@ -25,14 +25,14 @@ export const carouselImages = [
 ];
 
 export const ourProjects = [
-	{ id: 1, src: '/images/image.png', title: 'project name' },
-	{ id: 2, src: '/images/image2.png', title: 'project name' },
-	{ id: 3, src: '/images/image3.png', title: 'project name' },
-	{ id: 4, src: '/images/image4.png', title: 'project name' },
-	{ id: 5, src: '/images/image.png', title: 'project name' },
-	{ id: 6, src: '/images/image2.png', title: 'project name' },
-	{ id: 7, src: '/images/image3.png', title: 'project name' },
-	{ id: 8, src: '/images/image4.png', title: 'project name' },
+	{ id: 1, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image.png', title: 'project name' },
+	{ id: 2, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image2.png', title: 'project name' },
+	{ id: 3, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image3.png', title: 'project name' },
+	{ id: 4, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image4.png', title: 'project name' },
+	{ id: 5, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image.png', title: 'project name' },
+	{ id: 6, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image2.png', title: 'project name' },
+	{ id: 7, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image3.png', title: 'project name' },
+	{ id: 8, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image4.png', title: 'project name' },
 ];
 export const serviscesImages = [
 	{ id: 1, src: '/images/image.png', title: 'service name' },
@@ -432,3 +432,33 @@ export const jobs: Job[] = [
 		icon: '/images/C1.png',
 	},
 ];
+export const historyData = [
+	{
+	  id: 0,
+	  img: '/images/1.webp',
+	  subTitle: "2018",
+	  title: "The Founding Year",
+	  desc: "Vita La Vie was established in Dubai in 2018",
+	},
+	{
+	  id: 1,
+	  img: '/images/2.webp',
+	  subTitle: "2019 - 2020",
+	  title: "The Beginning Of expand.",
+	  desc: "Vita La Vie Started and expanded working in the Iraq market",
+	},
+	{
+	  id: 2,
+	  img: '/images/3.webp',
+	  subTitle: "2021",
+	  title: "New Market",
+	  desc: "Vita La Vie started working in the Sudan market",
+	},
+	{
+	  id: 3,
+	  img: '/images/4.webp',
+	  subTitle: "2022 - 2023",
+	  title: "Potential Market",
+	  desc: "Work on potential markets in Oman and Saudi Arabia",
+	},
+  ];

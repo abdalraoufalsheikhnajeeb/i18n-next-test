@@ -70,13 +70,7 @@ const Navbar = ({ dic }: { dic: Awaited<ReturnType<typeof getDictionary>> }) => 
 					href={`/${lang}/AboutUs`}>
 					{dic?.AboutUs}
 				</Link>
-				<Link
-					className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
-						pathname === '/about' ? 'active' : ''
-					}`}
-					href={`/${lang}/Careers`}>
-					{dic?.Careers}
-				</Link>
+			
 				<Link
 					className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
 						pathname === '/about' ? 'active' : ''
@@ -122,13 +116,7 @@ const Navbar = ({ dic }: { dic: Awaited<ReturnType<typeof getDictionary>> }) => 
 							href={`/${lang}/AboutUs`}>
 							{dic?.AboutUs}
 						</Link>
-						<Link
-							className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
-								pathname === '/about' ? 'active' : ''
-							}`}
-							href={`/${lang}/Careers`}>
-							{dic?.Careers}
-						</Link>
+						
 						<Link
 							className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
 								pathname === '/about' ? 'active' : ''

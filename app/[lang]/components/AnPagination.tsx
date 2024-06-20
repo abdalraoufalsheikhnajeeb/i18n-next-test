@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { SetStateAction, useState } from 'react';
 import { ourProjects } from '../data';
 import Link from 'next/link';
 import AnCard from './AnCard/AnCard';
@@ -11,16 +11,16 @@ const AnPagination = ({ dic }: { dic: Awaited<ReturnType<typeof getDictionary>> 
 	const totalPages = Math.ceil(ourProjects.length / ItemsPerPage);
 	const startIndex = (currentPage - 1) * ItemsPerPage;
 	const visibleItems = ourProjects.slice(startIndex, startIndex + ItemsPerPage);
-	const handlePageChange = (page) => {
+	const handlePageChange = (page: SetStateAction<number>) => {
 		setCurrentPage(page);
 	};
-console.log("dic" ,dic);
+
 	return (
 		<>
-			<div className='flex min-h-[35rem] w-full  flex-wrap  justify-center   items-start gap-y-20  gap-[10vw]'>
-				{visibleItems.map((image) => (
-					<Link href={`/${dic?.currLang}/Projects/${image.id}`} key={image.id}>
-						<AnCard textVisible={false} title={image.title} src={image.src} />
+			<div className='flex min-h-[35rem] w-full flex-wrap justify-center items-start gap-y-20 gap-10'>
+				{visibleItems.map((card) => (
+					<Link href={`/${dic?.currLang}/Projects/${card.id}`} key={card.id}>
+						<AnCard desc={card.desc}  title={card.title} src={card.src} />
 					</Link>
 				))}
 			</div>

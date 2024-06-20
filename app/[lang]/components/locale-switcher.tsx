@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { i18n, type Locale } from "../../../i18n-config";
+import Image from "next/image";
 
 export default function LocaleSwitcher() {
   const pathName = usePathname();
@@ -15,12 +16,20 @@ export default function LocaleSwitcher() {
 
   return (
     <div>
-      <p>Locale switcher:</p>
-      <ul>
+    
+      <ul className="flex gap-3">
         { i18n.locales.map((locale) => {
           return (
-            <li className="text-white" key={locale}>
-              <Link href={redirectedPathName(locale)}>{locale}</Link>
+            <li  key={locale}>
+              <Link href={redirectedPathName(locale)}>
+              <Image
+              width={50}
+              height={50}
+              alt="flag"
+              src={`/images/${locale}.svg`}
+              />
+              </Link>
+             
             </li>
           );
         })}

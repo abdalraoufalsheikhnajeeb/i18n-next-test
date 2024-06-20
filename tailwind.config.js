@@ -9,7 +9,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+
+      backgroundImage: {
+        'hero': "url('/images/hero.webp')",
+        'hero2': "url('/images/hero2.webp')",
+      },
+    },
   },
   plugins: [],
 }
