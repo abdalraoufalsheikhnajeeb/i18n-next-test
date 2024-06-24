@@ -87,17 +87,7 @@ body {
 
 
 
-.social-link {
-    background-color: #e5d1ff;
-    border: solid 1px #d1aeff;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 0.25rem;
-}
+
 
 @media (min-width: 1024px) {
 
@@ -210,3 +200,28 @@ body {
         opacity: 0;
     }
 }
+
+.slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  
+  .slick-prev svg, .slick-next svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+  .slick-dots{
+    margin-bottom: 1REM;
+  }

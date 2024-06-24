@@ -104,7 +104,9 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
 					</div>
 				</section>
 				<History />
-				<Locations/>
+				<Locations params={{
+          lang: lang
+        }}/>
 				<section className=' gap-2 w-full md:min-h-[80vh] flex flex-col items-center md:flex-row '>
 					<div className='flex justify-center items-center flex-col md:flex-row h-full relative w-full'>
 						<Image

@@ -13,7 +13,6 @@ import {
 } from '../../../../Services/api';
 import OurServices from '../../components/ServicesComponents/OurServices';
 import WorkShops from '../../components/workShopComponents/WorkShops';
-import OldProjects from '../../components/OldProjects/OldProjects';
 
 type OurWorldProps = {
 	dic: Awaited<ReturnType<typeof getDictionary>>;

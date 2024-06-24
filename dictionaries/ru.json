@@ -51,5 +51,7 @@
   "notFound": "Ошибка 404",
   "notFoundDesc": "Извините, страница не найдена!",
   "returnHome": "Вернуться на главную",
-  "OurWorkShop": "Деятельность нашей мастерской"
+  "OurWorkShop": "Деятельность нашей мастерской",
+   "OurLocations" : "Our Locations",
+     "FindUs" : "FindUs on Google Maps"
 }

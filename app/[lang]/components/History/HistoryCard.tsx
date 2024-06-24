@@ -27,7 +27,7 @@ const HistoryCard: React.FC<HistoryCardProps> = ({ historyItem, nextHistorySlide
       <div className="history-card-timelines-wrapper w-full">
         <div className="history-card-timeline flex items-center mb-4">
           <div className="flex flex-col items-center mr-4">
-            <span className="history-card-timeline-rounder w-4 h-4 bg-blue-500 rounded-full mb-2"></span>
+            <span className="history-card-timeline-rounder w-4 h-4 bg-accent rounded-full mb-2"></span>
             <span className="history-card-timeline-line h-full w-px bg-gray-300"></span>
           </div>
           <div className="history-card-timeline-content">
@@ -42,7 +42,7 @@ const HistoryCard: React.FC<HistoryCardProps> = ({ historyItem, nextHistorySlide
             onClick={() => handleSelectedHistoryCard(nextHistorySlide)}
           >
             <div className="flex flex-col items-center mr-4">
-              <span className="history-card-timeline-rounder w-4 h-4 bg-blue-500 rounded-full mb-2"></span>
+              <span className="history-card-timeline-rounder w-4 h-4 bg-accent rounded-full mb-2"></span>
               <span className="history-card-timeline-line h-full w-px bg-gray-300"></span>
             </div>
             <div className="history-card-timeline-content">

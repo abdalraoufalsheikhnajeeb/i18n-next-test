@@ -51,5 +51,7 @@
   "notFound": "خطأ 404",
   "notFoundDesc": "عذرًا، الصفحة غير موجودة!",
   "returnHome": "العودة إلى الصفحة الرئيسية",
-  "OurWorkShop": "أنشطة ورش العمل الخاصة بنا"
+  "OurWorkShop": "أنشطة ورش العمل الخاصة بنا",
+   "OurLocations" : "Our Locations",
+     "FindUs" : "FindUs on Google Maps"
 }
