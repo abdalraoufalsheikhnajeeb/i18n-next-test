@@ -28,7 +28,7 @@ export default async function Root({
   const dic = await getDictionary(params.lang);
   return (
     <html lang={params.lang}>
-      <body dir={params.lang === "ar" ? "rtl" : "ltr"} className={`bg-[#0b1b36] overflow-x-hidden ${cairo.className}`}>
+      <body dir={params.lang === "ar" ? "rtl" : "ltr"} className={`custombg overflow-x-hidden ${cairo.className}`}>
         <Navbar dic={dic} />
         {children}
         <Footer params={params} />

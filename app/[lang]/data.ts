@@ -27,77 +27,126 @@ export const carouselImages = [
 export const ourProjects = [
 	{
 	  id: 1,
-	  desc: "We are an authorized agent for Cham Wings Airlines, offering comprehensive flight services. Experience seamless travel planning with us.",
-	  src: '/images/image.png',
-	  title: 'An authorized agent for Cham Wings Airlines'
+	  descen: "We are an authorized agent for Cham Wings Airlines, offering comprehensive flight services.",
+	  descar: "نحن وكلاء معتمدون لشركة طيران أجنحة الشام، نقدم خدمات شاملة للطيران.",
+	  descru: "Мы являемся официальным агентом авиакомпании Cham Wings Airlines и предлагаем полный комплекс услуг по бронированию авиабилетов.",
+	  src: '/images/chamwings.webp',
+	  titleen: 'An authorized agent for Cham Wings Airlines',
+	  titlear: 'وكيل معتمد لشركة طيران أجنحة الشام',
+	  titleru: 'Авторизованный агент авиакомпании Cham Wings Airlines'
 	},
 	{
 	  id: 2,
-	  desc: "Book your Syrian air reservations with ease and convenience. Enjoy a hassle-free booking experience tailored to your needs.",
-	  src: '/images/image2.png',
-	  title: 'Syrian air reservations'
+	  descen: "Fly with confidence through our authorized Flydubai agent services. We ensure a smooth and efficient booking process for all destinations.",
+	  descar: "سافر بثقة من خلال خدمات وكيل فلاي دبي المعتمد. نضمن لك عملية حجز سلسة وفعالة لجميع الوجهات.",
+	  descru: "Летайте с уверенностью с помощью наших услуг авторизованного агента Flydubai. Мы обеспечиваем гладкий и эффективный процесс бронирования для всех направлений.",
+	  src: '/images/flyDubai.webp',
+	  titleen: 'Authorized Flydubai agent',
+	  titlear: 'وكيل معتمد لشركة فلاي دبي',
+	  titleru: 'Авторизованный агент Flydubai'
 	},
 	{
 	  id: 3,
-	  desc: "Fly with confidence through our authorized Flydubai agent services. We ensure a smooth and efficient booking process for all destinations.",
-	  src: '/images/image3.png',
-	  title: 'Authorized Flydubai agent'
+	  descen: "As an authorized agent of Air Arabia, we offer reliable and affordable flight reservations. Your travel comfort is our priority.",
+	  descar: "بصفتنا وكلاء معتمدين لشركة العربية للطيران، نقدم حجوزات طيران موثوقة وبأسعار معقولة. راحتك أثناء السفر هي أولويتنا.",
+	  descru: "Как авторизованный агент Air Arabia, мы предлагаем надежное и доступное бронирование авиабилетов. Ваш комфорт во время путешествий — наш приоритет.",
+	  src: '/images/arabia.webp',
+	  titleen: 'Authorized agent of Air Arabia',
+	  titlear: 'وكيل معتمد لشركة العربية للطيران',
+	  titleru: 'Авторизованный агент Air Arabia'
 	},
 	{
 	  id: 4,
-	  desc: "As an authorized agent of Air Arabia, we offer reliable and affordable flight reservations. Your travel comfort is our priority.",
-	  src: '/images/image4.png',
-	  title: 'Authorized agent of Air Arabia'
+	  descen: "Book your Syrian air reservations with ease and convenience. Enjoy a hassle-free booking experience tailored to your needs.",
+	  descar: "احجز رحلاتك الجوية السورية بسهولة وراحة. استمتع بتجربة حجز خالية من المتاعب تلبي احتياجاتك.",
+	  descru: "Бронируйте авиабилеты на сирийские рейсы легко и удобно. Наслаждайтесь беспроблемным процессом бронирования, адаптированным к вашим потребностям.",
+	  src: '/images/syrianplane.webp',
+	  titleen: 'Syrian air reservations',
+	  titlear: 'حجوزات الطيران السورية',
+	  titleru: 'Бронирование сирийских авиабилетов'
 	},
 	{
 	  id: 5,
-	  desc: "We specialize in flight reservations to all parts of the world. Enjoy global travel solutions with our expert services.",
-	  src: '/images/image.png',
-	  title: 'Flight reservations to all parts of the world'
+	  descen: "We specialize in flight reservations to all parts of the world.",
+	  descar: "نحن متخصصون في حجوزات الطيران إلى جميع أنحاء العالم.",
+	  descru: "Мы специализируемся на бронировании авиабилетов по всему миру.",
+	  src: '/images/reservations.webp',
+	  titleen: 'Flight reservations to all parts of the world',
+	  titlear: 'حجوزات الطيران إلى جميع أنحاء العالم',
+	  titleru: 'Бронирование авиабилетов во все уголки мира'
 	},
 	{
 	  id: 6,
-	  desc: "Discover amazing tours to UAE, Russia, and Türkiye with our tailored travel packages. Experience unforgettable journeys.",
-	  src: '/images/image2.png',
-	  title: 'Tours, UAE, Russia, Türkiye'
+	  descen: "Discover amazing tours to UAE, Russia, and Türkiye with our tailored travel packages. Experience unforgettable journeys.",
+	  descar: "اكتشف جولات مذهلة إلى الإمارات وروسيا وتركيا مع باقات السفر المصممة خصيصًا. استمتع برحلات لا تُنسى.",
+	  descru: "Откройте для себя удивительные туры в ОАЭ, Россию и Турцию с нашими индивидуальными туристическими пакетами. Испытайте незабываемые путешествия.",
+	  src: '/images/aroundworld.webp',
+	  titleen: 'Tours, UAE, Russia, Türkiye,...',
+	  titlear: 'جولات، الإمارات، روسيا، تركيا',
+	  titleru: 'Туры, ОАЭ, Россия, Турция ,...'
 	},
 	{
 	  id: 7,
-	  desc: "Secure hotel reservations at top destinations worldwide. Enjoy comfortable stays with our reliable booking services.",
-	  src: '/images/image3.png',
-	  title: 'Hotel reservations'
+	  descen: "Secure hotel reservations at top destinations worldwide. Enjoy comfortable stays with our reliable booking services.",
+	  descar: "احجز الفنادق في أفضل الوجهات العالمية. استمتع بإقامات مريحة مع خدمات الحجز الموثوقة لدينا.",
+	  descru: "Забронируйте отели в лучших направлениях по всему миру. Наслаждайтесь комфортным пребыванием с нашими надежными услугами бронирования.",
+	  src: '/images/hotel.webp',
+	  titleen: 'Hotel reservations',
+	  titlear: 'حجوزات الفنادق',
+	  titleru: 'Бронирование отелей'
 	},
 	{
 	  id: 8,
-	  desc: "Obtain travel visas quickly and efficiently with our expert assistance. We simplify the process to ensure your travels are stress-free.",
-	  src: '/images/image4.png',
-	  title: 'Travel visas'
+	  descen: "Obtain travel visas quickly and efficiently with our expert assistance. We simplify the process to ensure your travels are stress-free.",
+	  descar: "احصل على تأشيرات السفر بسرعة وكفاءة مع مساعدتنا الخبيرة. نحن نبسط العملية لضمان رحلاتك بدون ضغوط.",
+	  descru: "Получайте туристические визы быстро и эффективно с нашей экспертной помощью. Мы упрощаем процесс, чтобы ваши поездки были без стресса.",
+	  src: '/images/visas.webp',
+	  titleen: 'Travel visas',
+	  titlear: 'تأشيرات السفر',
+	  titleru: 'Туристические визы'
 	},
 	{
 	  id: 9,
-	  desc: "Get comprehensive travel insurance for your journeys. We provide peace of mind with our extensive coverage options.",
-	  src: '/images/image.png',
-	  title: 'Travel insurance'
+	  descen: "Get comprehensive travel insurance for your journeys. We provide peace of mind with our extensive coverage options.",
+	  descar: "احصل على تأمين سفر شامل لرحلاتك. نقدم لك راحة البال مع خيارات التغطية الشاملة لدينا.",
+	  descru: "Получите комплексное страхование путешествий для своих поездок. Мы предоставляем душевное спокойствие с нашими широкими вариантами покрытия.",
+	  src: '/images/insurance.webp',
+	  titleen: 'Travel insurance',
+	  titlear: 'تأمين السفر',
+	  titleru: 'Страхование путешествий'
 	},
 	{
 	  id: 10,
-	  desc: "Explore our wide range of tourism services designed to enhance your travel experience. From guided tours to unique excursions, we have it all.",
-	  src: '/images/image2.png',
-	  title: 'Tourism services'
+	  descen: "Explore our wide range of tourism services designed to enhance your travel experience. From guided tours to unique excursions, we have it all.",
+	  descar: "اكتشف مجموعتنا الواسعة من خدمات السياحة المصممة لتعزيز تجربتك في السفر. من الجولات الموجهة إلى الرحلات الفريدة، لدينا كل شيء.",
+	  descru: "Исследуйте наш широкий спектр туристических услуг, разработанных для улучшения вашего опыта путешествий. От экскурсий с гидом до уникальных туров — у нас есть все.",
+	  src: '/images/tourism.webp',
+	  titleen: 'Tourism services',
+	  titlear: 'خدمات السياحة',
+	  titleru: 'Туристические услуги'
 	},
 	{
 	  id: 11,
-	  desc: "Plan your perfect honeymoon trip with us. We offer romantic destinations and tailored packages for unforgettable memories.",
-	  src: '/images/image3.png',
-	  title: 'Honeymoon trips'
+	  descen: "Plan your perfect honeymoon trip with us. We offer romantic destinations and tailored packages for unforgettable memories.",
+	  descar: "خطط لرحلة شهر العسل المثالية معنا. نقدم وجهات رومانسية وحزم مخصصة لذكريات لا تُنسى.",
+	  descru: "Планируйте свое идеальное свадебное путешествие с нами. Мы предлагаем романтические направления и индивидуальные пакеты для незабываемых воспоминаний.",
+	  src: '/images/honeymoon.webp',
+	  titleen: 'Honeymoon trips',
+	  titlear: 'رحلات شهر العسل',
+	  titleru: 'Свадебные путешествия'
 	},
 	{
 	  id: 12,
-	  desc: "Enjoy our airport taxi services for convenient and reliable transportation. We ensure timely pickups and drop-offs for your travels.",
-	  src: '/images/image4.png',
-	  title: 'Airport taxi services'
+	  descen: "Enjoy our airport taxi services for convenient and reliable transportation. We ensure timely pickups and drop-offs for your travels.",
+	  descar: "استمتع بخدمات سيارات الأجرة في المطار لدينا للنقل المريح والموثوق. نضمن لك الالتزام بالمواعيد في الاستلام والتوصيل لرحلاتك.",
+	  descru: "Воспользуйтесь нашими услугами такси в аэропорту для удобной и надежной транспортировки. Мы гарантируем своевременную подачу и высадку для ваших поездок.",
+	  src: '/images/taxi.webp',
+	  titleen: 'Airport taxi services',
+	  titlear: 'خدمات سيارات الأجرة في المطار',
+	  titleru: 'Услуги такси в аэропорту'
 	},
   ];
+  
   
 export const serviscesImages = [
 	{ id: 1, src: '/images/image.png', title: 'service name' },

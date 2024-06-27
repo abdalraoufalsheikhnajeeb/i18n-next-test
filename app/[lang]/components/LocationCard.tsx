@@ -97,7 +97,7 @@ const LocationCard: React.FC<LocationCardProps> = ({
   };
 
   return (
-    <div className="bg-white w-screen">
+    <div className=" w-screen">
       <div className="max-w-7xl mx-auto  rounded-lg overflow-hidden my-4">
         <div className="flex justify-center  items-center p-4">
           <img
