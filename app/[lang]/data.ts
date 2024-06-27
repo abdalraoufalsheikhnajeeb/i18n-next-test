@@ -25,15 +25,80 @@ export const carouselImages = [
 ];
 
 export const ourProjects = [
-	{ id: 1, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image.png', title: 'project name' },
-	{ id: 2, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image2.png', title: 'project name' },
-	{ id: 3, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image3.png', title: 'project name' },
-	{ id: 4, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image4.png', title: 'project name' },
-	{ id: 5, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image.png', title: 'project name' },
-	{ id: 6, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image2.png', title: 'project name' },
-	{ id: 7, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image3.png', title: 'project name' },
-	{ id: 8, desc: "lorem sdkfj hads k lkjhdflk hjrtnb df jkg  hjl hjgf dszfb sfghet yjru krthg ", src: '/images/image4.png', title: 'project name' },
-];
+	{
+	  id: 1,
+	  desc: "We are an authorized agent for Cham Wings Airlines, offering comprehensive flight services. Experience seamless travel planning with us.",
+	  src: '/images/image.png',
+	  title: 'An authorized agent for Cham Wings Airlines'
+	},
+	{
+	  id: 2,
+	  desc: "Book your Syrian air reservations with ease and convenience. Enjoy a hassle-free booking experience tailored to your needs.",
+	  src: '/images/image2.png',
+	  title: 'Syrian air reservations'
+	},
+	{
+	  id: 3,
+	  desc: "Fly with confidence through our authorized Flydubai agent services. We ensure a smooth and efficient booking process for all destinations.",
+	  src: '/images/image3.png',
+	  title: 'Authorized Flydubai agent'
+	},
+	{
+	  id: 4,
+	  desc: "As an authorized agent of Air Arabia, we offer reliable and affordable flight reservations. Your travel comfort is our priority.",
+	  src: '/images/image4.png',
+	  title: 'Authorized agent of Air Arabia'
+	},
+	{
+	  id: 5,
+	  desc: "We specialize in flight reservations to all parts of the world. Enjoy global travel solutions with our expert services.",
+	  src: '/images/image.png',
+	  title: 'Flight reservations to all parts of the world'
+	},
+	{
+	  id: 6,
+	  desc: "Discover amazing tours to UAE, Russia, and Türkiye with our tailored travel packages. Experience unforgettable journeys.",
+	  src: '/images/image2.png',
+	  title: 'Tours, UAE, Russia, Türkiye'
+	},
+	{
+	  id: 7,
+	  desc: "Secure hotel reservations at top destinations worldwide. Enjoy comfortable stays with our reliable booking services.",
+	  src: '/images/image3.png',
+	  title: 'Hotel reservations'
+	},
+	{
+	  id: 8,
+	  desc: "Obtain travel visas quickly and efficiently with our expert assistance. We simplify the process to ensure your travels are stress-free.",
+	  src: '/images/image4.png',
+	  title: 'Travel visas'
+	},
+	{
+	  id: 9,
+	  desc: "Get comprehensive travel insurance for your journeys. We provide peace of mind with our extensive coverage options.",
+	  src: '/images/image.png',
+	  title: 'Travel insurance'
+	},
+	{
+	  id: 10,
+	  desc: "Explore our wide range of tourism services designed to enhance your travel experience. From guided tours to unique excursions, we have it all.",
+	  src: '/images/image2.png',
+	  title: 'Tourism services'
+	},
+	{
+	  id: 11,
+	  desc: "Plan your perfect honeymoon trip with us. We offer romantic destinations and tailored packages for unforgettable memories.",
+	  src: '/images/image3.png',
+	  title: 'Honeymoon trips'
+	},
+	{
+	  id: 12,
+	  desc: "Enjoy our airport taxi services for convenient and reliable transportation. We ensure timely pickups and drop-offs for your travels.",
+	  src: '/images/image4.png',
+	  title: 'Airport taxi services'
+	},
+  ];
+  
 export const serviscesImages = [
 	{ id: 1, src: '/images/image.png', title: 'service name' },
 	{ id: 2, src: '/images/image2.png', title: 'service name' },
