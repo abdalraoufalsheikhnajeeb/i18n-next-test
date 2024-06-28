@@ -4,7 +4,7 @@ import Head from 'next/head';
 import './globals.css';
 import { getDictionary } from "../../get-dictionary";
 import Navbar from "./components/NavBar";
-import { Footer } from "./components/Footer";
+
 import { Cairo } from 'next/font/google'; 
 
 const cairo = Cairo({ subsets: ['latin'] });
@@ -28,10 +28,19 @@ export default async function Root({
   const dic = await getDictionary(params.lang);
   return (
     <html lang={params.lang}>
-      <body dir={params.lang === "ar" ? "rtl" : "ltr"} className={`custombg overflow-x-hidden ${cairo.className}`}>
+      <Head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+      </Head>
+      <body dir={params.lang === "ar" ? "rtl" : "ltr"} className={`overflow-x-hidden ${cairo.className}`}>
         <Navbar dic={dic} />
         {children}
-        <Footer params={params} />
+       
       </body>
     </html>
   );

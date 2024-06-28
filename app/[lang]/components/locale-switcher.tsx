@@ -1,5 +1,4 @@
 "use client";
-
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { i18n, type Locale } from "../../../i18n-config";
@@ -16,23 +15,17 @@ export default function LocaleSwitcher() {
 
   return (
     <div>
-    
       <ul className="flex gap-3">
-        { i18n.locales.map((locale) => {
-          return (
-            <li  key={locale}>
-              <Link href={redirectedPathName(locale)}>
-              <Image
-              width={50}
-              height={50}
-              alt="flag"
-              src={`/images/${locale}.svg`}
-              />
-              </Link>
-             
-            </li>
-          );
-        })}
+        <Link href={redirectedPathName("en")}>
+          <Image width={50} height={50} alt="flag" src={`/images/en.svg`} />
+        </Link>
+        <Link href={redirectedPathName("ar")}>
+          <Image width={50} height={50} alt="flag" src={`/images/ar.webp`} />
+        </Link>
+        <Link href={redirectedPathName("ru")}>
+          <Image width={50} height={50} alt="flag" src={`/images/ru.svg`} />
+        </Link>
+       
       </ul>
     </div>
   );

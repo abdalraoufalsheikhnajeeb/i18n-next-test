@@ -1,6 +1,5 @@
 {
   "currLang": "en",
-  "lang": "العربية",
   "Home": "Home",
   "homeText": "Discover Amazing Destinations That Take You Beyond the Ordinary",
   "ayatAnimation": "Diamond Stars Travel & Tourism",
@@ -12,5 +11,6 @@
   "uae": "UAE",
   "ourServices": "Our Services",
   "OurLocations" : "Our Locations",
-  "FindUs" : "FindUs on Google Maps"
+  "FindUs" : "FindUs on Google Maps",
+  "ourTours" : "Our Tours"
 }

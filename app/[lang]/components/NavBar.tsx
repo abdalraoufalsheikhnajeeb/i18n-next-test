@@ -75,30 +75,16 @@ const Navbar = ({
           className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
             pathname === "/about" ? "active" : ""
           }`}
-          href={`/${lang}/AboutUs`}
+          href={`/${lang}/ourTours`}
         >
-          {dic?.AboutUs}
+          {dic?.ourTours}
         </Link>
 
-        <Link
-          className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
-            pathname === "/about" ? "active" : ""
-          }`}
-          href={`/${lang}/OurWorld`}
-        >
-          {dic?.OurWorld}
-        </Link>
+      
       </div>
       <div className="flex items-center h-14 gap-4">
         <LocaleSwitcher />
-        <Link
-          href={`/${lang}/ContactUs`}
-          className={`w-52 text-white hidden border-solid border-white shadow-[0px_23px_32px_0px_rgba(104,_42,_97,_0.26)] lg:flex lg:flex-row lg:justify-center pt-3 h-12 items-start border-2 rounded-[32px] ${
-            pathname === `/${lang}/ContactUs` ? "active" : ""
-          }`}
-        >
-          {dic?.getInTouch}
-        </Link>
+
         <Image
           className={`cursor-pointer ${
             isBurgerOpen && "h-16 w-16"
@@ -125,30 +111,11 @@ const Navbar = ({
               className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
                 pathname === "/about" ? "active" : ""
               }`}
-              href={`/${lang}/AboutUs`}
+              href={`/${lang}/ourTours`}
             >
-              {dic?.AboutUs}
-            </Link>
-
-            <Link
-              className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
-                pathname === "/about" ? "active" : ""
-              }`}
-              href={`/${lang}/OurWorld`}
-            >
-              {dic?.OurWorld}
-            </Link>
-            <Link
-              href={`/${lang}/ContactUs`}
-              className=" w-[80vw] flex  bg-white shadow-[0px_23px_32px_0px_rgba(104,_42,_97,_0.26)]  justify-center items-center  h-12  mt-48 rounded-[32px]"
-              onClick={toggleBurger}
-            >
-              <span className="text-center font-bold text-primary-500">
-                {dic?.getInTouch}
-              </span>
+              {dic?.ourTours}
             </Link>
           </div>
-
           <Image
             src={`/images/blur.webp`}
             className="blurred-background"

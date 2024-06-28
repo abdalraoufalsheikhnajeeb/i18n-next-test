@@ -1,5 +1,4 @@
 import "../globals.css";
-
 const AnTitle = ({ title }: { title: string }) => {
   return (
   
