@@ -41,7 +41,14 @@ export default async function Home({
       <div className="bg-hero bg-cover bg-no-repeat absolute -z-10  h-screen w-screen" />
       <div className=" bg-gradient absolute -z-[1]  h-screen w-screen" />
       <main className={" max-w-[90vw]  mx-auto flex items-center flex-col"}>
-        <header className="h-screen gap-8 pb-8 flex flex-col items-center justify-end">
+        <header className="h-screen gap-8 pb-8 flex flex-col items-center justify-end ">
+          <Image
+            src="/images/logo.webp"
+            className="w-40 lg:w-60"
+            alt="arrow"
+            width={250}
+            height={200}
+          />
           <h2 className="text-5xl lg:text-5xl max-w-3xl font-bold  text-[#11407c]  text-center">
             {dic?.homeText}
           </h2>
@@ -179,9 +186,7 @@ export default async function Home({
           <a
             title="UAE location"
             target="_blank"
-            href={
-              "https://maps.app.goo.gl/7qC5aEFBgittwxY68"
-            }
+            href={"https://maps.app.goo.gl/7qC5aEFBgittwxY68"}
           >
             <Image
               className="w-[70%] h-20 duration-300 transform  transition-transform ease-in-out hover:scale-110"
@@ -194,9 +199,7 @@ export default async function Home({
           <a
             title="instagram"
             target="_blank"
-            href={
-              "https://maps.app.goo.gl/AURZZ5qdu8yfD9NH9"
-            }
+            href={"https://maps.app.goo.gl/AURZZ5qdu8yfD9NH9"}
           >
             <Image
               className="w-[70%] h-20 duration-300 transform  transition-transform ease-in-out hover:scale-110"

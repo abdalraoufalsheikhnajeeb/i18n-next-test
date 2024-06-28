@@ -13,7 +13,7 @@
 }
 
 .heading span {
-  background-image: url("/images/gr.webp");
+  background-image: url("/images/gold.svg");
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -201,3 +201,8 @@ body {
   background: rgb(255,255,255);
   background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
 }
+.bg-gradient2 {
+  background: rgb(9,40,136);
+  background: linear-gradient(183deg, rgba(9,40,136,1) 0%, rgba(249,249,249,0) 52%, rgba(9,40,136,1) 100%);
+}
+
