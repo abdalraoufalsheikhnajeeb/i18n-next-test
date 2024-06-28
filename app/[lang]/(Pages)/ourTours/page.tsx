@@ -1,7 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import AnTitle from "../../components/AnTitle";
-import AnPagination from "../../components/AnPagination";
 import { getDictionary } from "../../../../get-dictionary";
 import { Locale } from "../../../../i18n-config";
 import AnCard from "../../components/AnCard/AnCard";
