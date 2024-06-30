@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
-import { navLinks } from "../data";
 import { type getDictionary } from "../../../get-dictionary";
 import LocaleSwitcher from "./locale-switcher";
 
@@ -42,12 +41,6 @@ const Navbar = ({
   const [selectedPageIndex, setSelectedPageIndex] = useState(0);
   const pathname = usePathname();
 
-  useEffect(() => {
-    const foundIndex = navLinks.findIndex(
-      (navLink) => `/${lang}/${navLink.url}` === pathname
-    );
-    setSelectedPageIndex(foundIndex !== -1 ? foundIndex : 0);
-  }, [lang, pathname]);
   return (
     <nav
       className={`
@@ -79,8 +72,14 @@ const Navbar = ({
         >
           {dic?.ourTours}
         </Link>
-
-      
+        <Link
+          className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
+            pathname === "/about" ? "active" : ""
+          }`}
+          href={`/${lang}/about-us`}
+        >
+          {dic?.aboutUs}
+        </Link>
       </div>
       <div className="flex items-center h-14 gap-4">
         <LocaleSwitcher />
@@ -90,7 +89,7 @@ const Navbar = ({
             isBurgerOpen && "h-16 w-16"
           } shrink-0  z-10 -me-2 flex lg:hidden`}
           onClick={toggleBurger}
-          src={isBurgerOpen ? "/images/Cart.png" : "/images/burger_menu.png"}
+          src={isBurgerOpen ? "/images/Cart.svg" : "/images/burger_menu.svg"}
           width={50}
           height={50}
           alt="language"
@@ -117,7 +116,7 @@ const Navbar = ({
             </Link>
           </div>
           <Image
-            src={`/images/blur.webp`}
+            src={`/images/hero2M.webp`}
             className="blurred-background"
             width={10}
             height={10}

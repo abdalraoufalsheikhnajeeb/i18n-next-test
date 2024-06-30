@@ -36,6 +36,7 @@
   top: 0;
   left: 0;
   max-width: unset;
+  filter: brightness(30%);
 }
 
 body {

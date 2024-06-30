@@ -12,10 +12,8 @@ export default async function AboutUs({
   return (
     <div className=" gap-4 flex flex-col justify-center items-end">
       <header className="relative  flex flex-col gap-10 justify-end items-center  pb-28   bg-hero2 bg-center bg-cover bg-fixed h-screen bg-no-repeat   w-full">
-
-<AnCard desc="" title="" key={"f"} src="/"/>
+       
       </header>
-     
     </div>
   );
 }

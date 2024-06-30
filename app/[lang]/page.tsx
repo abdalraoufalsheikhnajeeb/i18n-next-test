@@ -1,33 +1,12 @@
-// export default async function IndexPage({
-//   params: { lang },
-// }: {
-//   params: { lang: Locale };
-// }) {
-//  const dic = await getDictionary(lang);
-
-//   return (
-//     <div>
-//
-//       <p>Current locale: {lang}</p>
-//       <p>
-//         This text is rendered on the server:{" "}
-//         {{dic?.welcome}
-//       </p>
-//       <Counter dic={dic} />
-//     </div>
-//   );
-// }
-
 import { getDictionary } from "../../get-dictionary";
 import { Locale } from "../../i18n-config";
-
 import Image from "next/image";
-
 import AnCard from "./components/AnCard/AnCard";
 import Link from "next/link";
 import { ourProjects } from "./data";
 import AnTitle from "./components/AnTitle";
 import Locations from "./components/Locations";
+import Partners from "./components/Partners";
 
 export default async function Home({
   params: { lang },
@@ -81,28 +60,10 @@ export default async function Home({
             </div>
           </div>
         </header>
-        <section className="flex-col w-screen lg:flex-row lg:min-h-[50vh] flex bg-white px-8 lg:px-28">
-          <div className="flex w-full flex-col my-12 items-center gap-6 lg:items-start overflow-visible text-black">
-            <Image
-              src="/images/logo.webp"
-              className="w-40 lg:w-60"
-              alt="arrow"
-              width={250}
-              height={200}
-            />
-            <p>
-              <span className="text-3xl font-bold">{dic?.ayatAnimation} </span>
-              <span className="text-2xl ">{dic?.prev1}</span>
-            </p>
-          </div>
-          <Image
-            src="/images/farouk.webp"
-            width={500}
-            height={400}
-            alt="founder image"
-            className="object-cover object-center lg:w-1/2 w-screen lg:custom-clip"
-          />
+        <section>
+          
         </section>
+        
         <section className="w-screen flex flex-col items-center gap-4 custombg">
           <AnTitle title={dic?.someProjects} />
 
@@ -133,6 +94,7 @@ export default async function Home({
             })}
           </div>
         </section>
+        <Partners   dic={dic}/>
         <Locations
           params={{
             lang: lang,
@@ -161,7 +123,7 @@ export default async function Home({
             }
           >
             <Image
-              className="w-[70%] transform transition-transform duration-300 h-28 ease-in-out hover:scale-110"
+              className="transform transition-transform duration-300 h-36 ease-in-out hover:scale-110"
               src={"/images/face.svg"}
               width={100}
               height={100}
@@ -176,7 +138,7 @@ export default async function Home({
             }
           >
             <Image
-              className="w-[70%] h-28 duration-300 transform  transition-transform ease-in-out hover:scale-110"
+              className="h-36 duration-300 transform  transition-transform ease-in-out hover:scale-110"
               src={"/images/insta.svg"}
               width={100}
               height={100}
@@ -189,8 +151,8 @@ export default async function Home({
             href={"https://maps.app.goo.gl/7qC5aEFBgittwxY68"}
           >
             <Image
-              className="w-[70%] h-20 duration-300 transform  transition-transform ease-in-out hover:scale-110"
-              src={"/images/whats-uae.svg"}
+              className="h-20 duration-300 transform  transition-transform ease-in-out hover:scale-110"
+              src={"/images/map-uae.svg"}
               width={100}
               height={100}
               alt={"UAE location"}
@@ -202,8 +164,8 @@ export default async function Home({
             href={"https://maps.app.goo.gl/AURZZ5qdu8yfD9NH9"}
           >
             <Image
-              className="w-[70%] h-20 duration-300 transform  transition-transform ease-in-out hover:scale-110"
-              src={"/images/whats-sar.svg"}
+              className="h-20 duration-300 transform  transition-transform ease-in-out hover:scale-110"
+              src={"/images/map-sar.svg"}
               width={100}
               height={100}
               alt={"syria location"}
