@@ -6,7 +6,6 @@ import Link from "next/link";
 import { ourProjects } from "./data";
 import AnTitle from "./components/AnTitle";
 import Locations from "./components/Locations";
-import WorldClock from "./(Pages)/WorldClock/page";
 
 export default async function Home({
   params: { lang },

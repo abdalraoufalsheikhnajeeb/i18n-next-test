@@ -20,10 +20,10 @@ type Partner = {
 type PartnersProps = {
   dic: Awaited<ReturnType<typeof getDictionary>>;
   data: Partner[];
-  title : string
+  title: string;
 };
 
-const Partners = ({ dic, data , title }: PartnersProps) => {
+const Partners = ({ dic, data, title }: PartnersProps) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -50,52 +50,47 @@ const Partners = ({ dic, data , title }: PartnersProps) => {
           slidesToScroll: 1,
         },
       },
-      
     ],
   };
 
   return (
-    <section className="our-partners-section  px-8 py-8">
+    <section className="our-partners-section px-[5vw] py-8">
       <AnTitle title={title} />
       <br />
       <br />
       <Slider {...settings}>
         {data.map((card, index) => {
-       
           let title;
 
           if (dic.currLang === "ar") {
-            
             title = card.titlear;
           } else if (dic.currLang === "ru") {
-          
             title = card.titleru;
           } else {
-            
             title = card.titleen;
           }
 
           return (
             <div
               key={index}
-              className="  bg-gray-200  border rounded-lg shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg w-full"
+              className="p-4"
             >
-              <Image
-                loading="lazy"
-                quality={20}
-                width={400}
-                height={200}
-                className="rounded-t-lg aspect-video object-cover"
-                src={card.src}
-                alt={title}
-              />
-              <div className="p-5 ">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                  {title}
-                </h5>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                 
-                </p>
+              <div className="bg-gray-200 border rounded-lg shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg h-full flex flex-col justify-center items-center">
+                <Image
+                  loading="lazy"
+                  quality={20}
+                  width={400}
+                  height={200}
+                  className="rounded-t-lg aspect-video object-cover"
+                  src={card.src}
+                  alt={title}
+                />
+                <div className="p-5 flex-grow flex flex-col justify-between">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">
+                    {title}
+                  </h5>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
+                </div>
               </div>
             </div>
           );

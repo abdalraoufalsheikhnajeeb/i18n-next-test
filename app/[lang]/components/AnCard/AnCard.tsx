@@ -20,7 +20,7 @@ export default async function AnCard({
         alt=""
       />
       <div className="p-5">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">
           {title}
         </h5>
       

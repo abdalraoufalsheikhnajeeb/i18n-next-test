@@ -1,71 +1,69 @@
 export const partners = [
   {
     id: 5,
-
     src: "/images/qatarairways.webp",
-    titleen: "Services for Qatar Airways",
-    titlear: "خدمات للخطوط الجوية القطرية للطيران",
-    titleru: "Услуги для Qatar Airways",
+    titleen: "Qatar Airways",
+    titlear: "الخطوط الجوية القطرية للطيران",
+    titleru: "Qatar Airways",
   },
   {
     id: 6,
-
     src: "/images/turkishairlines.webp",
-    titleen: "Services for Turkish Airlines",
-    titlear: "خدمات للخطوط الجوية الخطوط الجوية التركية",
-    titleru: "Услуги для Turkish Airlines",
+    titleen: "Turkish Airlines",
+    titlear: "الخطوط الجوية التركية",
+    titleru: "Turkish Airlines",
   },
   {
     id: 7,
-
     src: "/images/emirates.webp",
-    titleen: "Services for Emirates",
-    titlear: "خدمات للخطوط الجوية طيران الإمارات",
-    titleru: "Услуги для Emirates",
+    titleen: "Emirates",
+    titlear: "طيران الإمارات",
+    titleru: "Emirates",
   },
   {
     id: 8,
     src: "/images/egyptair.webp",
-    titleen: "Services for EgyptAir",
-    titlear: "خدمات للخطوط الجوية مصر للطيران",
-    titleru: "Услуги для EgyptAir",
+    titleen: "EgyptAir",
+    titlear: "مصر للطيران",
+    titleru: "EgyptAir",
   },
   {
     id: 9,
     src: "/images/saudia.webp",
-    titleen: "Services for Saudia",
-    titlear: "خدمات للخطوط الجوية الخطوط الجوية السعودية",
-    titleru: "Услуги для Saudia",
+    titleen: "Saudia",
+    titlear: "الخطوط الجوية السعودية",
+    titleru: "Saudia",
   },
   {
     id: 11,
     src: "/images/s7airlines.webp",
-    titleen: "Services for S7 Airlines",
-    titlear: "خدمات للخطوط الجوية S7 Airlines",
-    titleru: "Услуги для S7 Airlines",
+    titleen: "S7 Airlines",
+    titlear: "الخطوط الجوية S7 Airlines",
+    titleru: "S7 Airlines",
   },
   {
     id: 12,
     src: "/images/pegasusairlines.webp",
-    titleen: "Services for Pegasus Airlines",
-    titlear: "خدمات للخطوط الجوية بيجاسوس إيرلاينز",
-    titleru: "Услуги для Pegasus Airlines",
+    titleen: "Pegasus Airlines",
+    titlear: "بيجاسوس إيرلاينز",
+    titleru: "Pegasus Airlines",
   },
   {
     id: 13,
     src: "/images/etihadairways.webp",
-    titleen: "Services for Etihad Airways",
-    titlear: "خدمات للخطوط الجوية الاتحاد للطيران",
-    titleru: "Услуги для Etihad Airways",
+    titleen: "Etihad Airways",
+    titlear: "الاتحاد للطيران",
+    titleru: "Etihad Airways",
   },
   {
     id: 14,
     src: "/images/middleeastairlines.webp",
-    titleen: "Services for Middle East Airlines",
+    titleen: "Middle East Airlines",
     titlear: "الشرق الاوسط للخطوط الجوية",
-    titleru: "Услуги для Middle East Airlines",
+    titleru: "Middle East Airlines",
   },
 ];
+
 
 export const agents = [
   {

@@ -10,7 +10,7 @@ export default async function  page({
   }) {
     const dic = await getDictionary(lang);
   return (
-    <div className="pt-28 bg3">
+    <div className="pt-28 bg3  py-10">
  <Partners dic={dic} title={dic.OurPartners} data={partners}/>
  <Partners dic={dic} title={dic.agents} data={agents}/>
 
