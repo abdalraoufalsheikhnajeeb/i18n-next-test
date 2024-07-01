@@ -13,7 +13,7 @@ export default async function AnCard({
     <div className="max-w-sm bg-white border rounded-lg shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg">
       <Image
         loading="lazy"
-        quality={1}
+        quality={20}
         width={400}
         height={200}
         className="rounded-t-lg aspect-video object-cover"

@@ -29,11 +29,12 @@ const Partners = ({ dic, data }: PartnersProps) => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 800,
+    cssEase: "ease-in-out",
     responsive: [
       {
         breakpoint: 1024,
@@ -87,7 +88,7 @@ const Partners = ({ dic, data }: PartnersProps) => {
             >
               <Image
                 loading="lazy"
-                quality={1}
+                quality={20}
                 width={400}
                 height={200}
                 className="rounded-t-lg aspect-video object-cover"

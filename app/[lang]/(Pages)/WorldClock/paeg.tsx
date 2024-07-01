@@ -1,3 +1,4 @@
+'use client'
 import { useState, useEffect } from 'react';
 
 const timeZones = [
@@ -59,8 +60,8 @@ const WorldClock: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {timeZones.map(({ name }) => (
           <div key={name} className="bg-white shadow rounded-lg p-6 text-center">
-            <h2 className="text-2xl font-semibold mb-2">{name}</h2>
-            <p className="text-xl">{times[name]}</p>
+            <h2 className="text-2xl text-primary font-semibold mb-2">{name}</h2>
+            <p className="text-xl text-blue-600">{times[name]}</p>
           </div>
         ))}
       </div>

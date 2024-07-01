@@ -49,7 +49,7 @@ const Navbar = ({
     >
       <Image
         loading="lazy"
-        quality={1}
+        quality={20}
         className="flex-shrink-0 h-full   "
         width={100}
         height={80}
@@ -66,14 +66,14 @@ const Navbar = ({
         >
           {dic?.Home}
         </Link>
-        <Link
+        {/* <Link
           className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
             pathname === "/about" ? "active" : ""
           }`}
           href={`/${lang}/ourTours`}
         >
           {dic?.ourTours}
-        </Link>
+        </Link> */}
         <Link
           className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
             pathname === "/about" ? "active" : ""
@@ -84,11 +84,14 @@ const Navbar = ({
         </Link>
       </div>
       <div className="flex items-center h-14 gap-4">
+        <Link href={`/${lang}/worldClock`}>
+        {dic.worldClock}
+        </Link>
         <LocaleSwitcher />
 
         <Image
           loading="lazy"
-          quality={1}
+          quality={20}
           className={`cursor-pointer ${
             isBurgerOpen && "h-16 w-16"
           } shrink-0  z-10 -me-2 flex lg:hidden`}
@@ -110,18 +113,18 @@ const Navbar = ({
             >
               {dic?.Home}
             </Link>
-            <Link
+            {/* <Link
               className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
                 pathname === "/about" ? "active" : ""
               }`}
               href={`/${lang}/ourTours`}
             >
               {dic?.ourTours}
-            </Link>
+            </Link> */}
           </div>
           <Image
             loading="lazy"
-            quality={1}
+            quality={20}
             src={`/images/hero2M.webp`}
             className="blurred-background"
             width={10}

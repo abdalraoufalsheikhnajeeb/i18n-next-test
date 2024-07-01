@@ -1,8 +1,8 @@
-import { getDictionary } from "../../../get-dictionary";
-import { Locale } from "../../../i18n-config";
-import Partners from "../components/Partners";
-import { partners } from "../data";
-import { agents } from "../data";
+import { getDictionary } from "../../../../get-dictionary";
+import { Locale } from "../../../../i18n-config";
+import Partners from "../../components/Partners";
+import { partners } from "../../data";
+import { agents } from "../../data";
 export default async function  page({
     params: { lang },
   }: {

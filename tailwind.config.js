@@ -14,10 +14,10 @@ module.exports = {
         primary: '#0b1b36',
         accent: '#f1bc19',
       },
-      backgroundImage: {
-        'hero': "url('/images/hero.webp')",
-        'hero2': "url('/images/hero2.webp')",
-      },
+      // backgroundImage: {
+      //   'hero': "url('/images/hero.webp')",
+      //   'hero2': "url('/images/hero2.webp')",
+      // },
     },
   },
   plugins: [],

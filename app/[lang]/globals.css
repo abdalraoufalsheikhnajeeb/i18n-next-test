@@ -204,6 +204,6 @@ body {
 }
 .bg-gradient2 {
   background: rgb(9,40,136);
-  background: linear-gradient(183deg, rgba(9,40,136,1) 0%, rgba(249,249,249,0) 52%, rgba(9,40,136,1) 100%);
+  background: linear-gradient(180deg, rgba(9,40,136,0.6643907563025211) 0%, rgba(249,249,249,0) 51%, rgba(9,40,136,0.6867997198879552) 100%);
 }
 

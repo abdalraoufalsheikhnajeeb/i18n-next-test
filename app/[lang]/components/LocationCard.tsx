@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import Image from "next/image";
 
 // Dynamic import for the Slider component
 const Slider = dynamic(() => import("react-slick").then((mod) => mod.default), {
@@ -78,13 +79,37 @@ const LocationCard: React.FC<LocationCardProps> = ({
   const settings = {
     dots: true,
     infinite: true,
-    speed: 600,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
-    cssEase: "linear",
-
+    autoplaySpeed: 2000,
+    speed: 800,
+    cssEase: "ease-in-out",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+    ],
     nextArrow: (
       <SampleNextArrow
         onClick={function (): void {
@@ -105,7 +130,11 @@ const LocationCard: React.FC<LocationCardProps> = ({
     <div className={`w-screen ${addClass}`}>
       <div className="max-w-7xl mx-auto  rounded-lg overflow-hidden my-4">
         <div className="flex justify-center  items-center p-4">
-          <img
+          <Image
+          width={400}
+          height={200}
+          quality={20}
+          
             src={flagSrc}
             alt={`${locationName} flag`}
             className="w-20  mr-4"
@@ -114,7 +143,11 @@ const LocationCard: React.FC<LocationCardProps> = ({
         </div>
         <Link href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
           <div className="flex  items-center pt-12">
-            <img
+            <Image
+            width={400}
+            height={200}
+            quality={20}
+            
               src="/images/location.webp"
               alt={`${locationName} flag`}
               className="w-16  mr-4"
@@ -126,7 +159,11 @@ const LocationCard: React.FC<LocationCardProps> = ({
         </Link>
         <Link href={whatsLink}>
           <div className="flex  items-center">
-            <img
+            <Image
+            width={400}
+            height={200}
+            quality={20}
+            
               src="/images/phone.webp"
               alt={`${locationName} flag`}
               className="w-16  mr-4"
@@ -139,7 +176,11 @@ const LocationCard: React.FC<LocationCardProps> = ({
           {images.map((image, index) => (
             <div key={index} className="px-2">
               {" "}
-              <img
+              <Image
+              width={400}
+              height={200}
+              quality={20}
+              
                 src={image}
                 alt={`Office ${index + 1}`}
                 className="w-full h-64 object-cover"

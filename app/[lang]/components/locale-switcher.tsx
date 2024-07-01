@@ -19,7 +19,7 @@ export default function LocaleSwitcher() {
         <Link href={redirectedPathName("en")}>
           <Image
             loading="lazy"
-            quality={1}
+            quality={20}
             width={50}
             height={50}
             alt="flag"
@@ -29,7 +29,7 @@ export default function LocaleSwitcher() {
         <Link href={redirectedPathName("ar")}>
           <Image
             loading="lazy"
-            quality={1}
+            quality={20}
             width={50}
             height={50}
             alt="flag"
@@ -39,7 +39,7 @@ export default function LocaleSwitcher() {
         <Link href={redirectedPathName("ru")}>
           <Image
             loading="lazy"
-            quality={1}
+            quality={20}
             width={50}
             height={50}
             alt="flag"

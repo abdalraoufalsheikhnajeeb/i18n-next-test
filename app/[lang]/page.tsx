@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ourProjects } from "./data";
 import AnTitle from "./components/AnTitle";
 import Locations from "./components/Locations";
-import Partners from "./components/Partners";
+import WorldClock from "./(Pages)/WorldClock/paeg";
 
 export default async function Home({
   params: { lang },
@@ -17,14 +17,21 @@ export default async function Home({
 
   return (
     <>
-      <div className="bg-hero bg-cover bg-no-repeat absolute -z-10  h-screen w-screen" />
+      <Image
+            loading="lazy"
+            quality={10}
+            src="/images/hero.webp"
+            className="bg-gradient absolute -z-10 object-cover  h-screen w-screen"
+            alt="arrow"
+            width={1280}
+            height={720}
+          />
       <div className=" bg-gradient absolute -z-[1]  h-screen w-screen" />
       <main className={" max-w-[90vw]  mx-auto flex items-center flex-col"}>
         <header className="h-screen gap-8 pb-8 flex flex-col items-center justify-end ">
           <Image
             loading="lazy"
-           
-            quality={1}
+            quality={20}
             src="/images/logo.webp"
             className="w-40 lg:w-60"
             alt="arrow"
@@ -43,7 +50,7 @@ export default async function Home({
               <Link href="https://wa.me/971545866066">
                 <Image
                   loading="lazy"
-                  quality={1}
+                  quality={20}
                   src="/images/whats-uae.svg"
                   className="w-20 lg:w-24"
                   alt="arrow"
@@ -56,7 +63,7 @@ export default async function Home({
               <Link href="https://wa.me/963950026610">
                 <Image
                   loading="lazy"
-                  quality={1}
+                  quality={20}
                   src="/images/whats-sar.svg"
                   className="w-20 lg:w-24"
                   alt="arrow"
@@ -67,7 +74,7 @@ export default async function Home({
             </div>
           </div>
         </header>
-
+        <WorldClock/>
         <section className="w-screen flex flex-col items-center gap-4 custombg">
           <AnTitle title={dic?.someProjects} />
 
@@ -104,7 +111,7 @@ export default async function Home({
         <section className="custombg2 gap-2 w-screen h-[70vh] lg:h-screen flex flex-col items-center justify-center lg:flex-row ">
           <Image
             loading="lazy"
-            quality={1}
+            quality={20}
             src="/images/logobig.webp"
             className="lg:w-[40vw] w-[70vw] "
             alt="arrow"
@@ -127,7 +134,7 @@ export default async function Home({
           >
             <Image
               loading="lazy"
-              quality={1}
+              quality={20}
               className="transform transition-transform duration-300 h-36 ease-in-out hover:scale-110"
               src={"/images/face.svg"}
               width={100}
@@ -144,7 +151,7 @@ export default async function Home({
           >
             <Image
               loading="lazy"
-              quality={1}
+              quality={20}
               className="h-36 duration-300 transform  transition-transform ease-in-out hover:scale-110"
               src={"/images/insta.svg"}
               width={100}
@@ -159,7 +166,7 @@ export default async function Home({
           >
             <Image
               loading="lazy"
-              quality={1}
+              quality={20}
               className="h-20 duration-300 transform  transition-transform ease-in-out hover:scale-110"
               src={"/images/map-uae.svg"}
               width={100}
@@ -174,7 +181,7 @@ export default async function Home({
           >
             <Image
               loading="lazy"
-              quality={1}
+              quality={20}
               className="h-20 duration-300 transform  transition-transform ease-in-out hover:scale-110"
               src={"/images/map-sar.svg"}
               width={100}
