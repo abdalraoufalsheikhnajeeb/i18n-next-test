@@ -129,7 +129,7 @@ export const agents = [
   {
     id: 2,
    
-    src: "/images/flydubai.webp",
+    src: "/images/flyDubai.webp",
     titleen: "An authorized agent for Flydubai",
     titlear: "وكيل معتمد للخطوط الجوية فلاي دبي",
     titleru: "Авторизованный агент Flydubai",
