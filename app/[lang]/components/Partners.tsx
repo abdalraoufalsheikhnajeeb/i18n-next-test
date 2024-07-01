@@ -29,7 +29,7 @@ const Partners = ({ dic, data , title }: PartnersProps) => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     speed: 800,
     cssEase: "ease-in-out",
@@ -78,7 +78,7 @@ const Partners = ({ dic, data , title }: PartnersProps) => {
           return (
             <div
               key={index}
-              className="max-w-sm o h-96 mx-4  bg-white bg-gray-100 border rounded-lg shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg w-full"
+              className="  bg-gray-200  border rounded-lg shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg w-full"
             >
               <Image
                 loading="lazy"

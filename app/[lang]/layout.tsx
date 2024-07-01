@@ -5,10 +5,10 @@ import "./globals.css";
 import { getDictionary } from "../../get-dictionary";
 import Navbar from "./components/NavBar";
 
-import { Cairo } from "next/font/google";
+
 import Footer from "./components/Footer";
 
-const cairo = Cairo({ subsets: ["latin"] });
+
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -54,7 +54,7 @@ export default async function RootLayout({
       </Head>
       <body
         dir={params.lang === "ar" ? "rtl" : "ltr"}
-        className={`overflow-x-hidden ${cairo.className}`}
+        className={`overflow-x-hidden `}
       >
         <Navbar dic={dic} />
         {children}
