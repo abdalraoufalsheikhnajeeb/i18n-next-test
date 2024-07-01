@@ -82,13 +82,13 @@ const Partners = ({ dic, data, title }: PartnersProps) => {
                     quality={20}
                     width={400}
                     height={200}
-                    className="rounded-t-lg aspect-video object-cover"
+                    className="rounded-t-lg aspect-video object-contain"
                     src={card.src}
                     alt={title}
                   />
                 </div>
-                <div className="p-5 flex-grow flex flex-col justify-between">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">
+                <div className="p-5 flex-grow flex flex-col justify-between h-28">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-[#11407c] text-center">
                     {title}
                   </h5>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>

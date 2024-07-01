@@ -64,14 +64,14 @@ export const partners = [
   },
   {
     id: 10,
-    src: "/images/jorfanair.png",
+    src: "/images/jordanair.png",
     titleen: "Royal Jordanian",
     titlear: "الخطوط الملكية الأردنية",
     titleru: "Royal Jordanian",
   },
   {
     id: 11,
-    src: "/images/indianair.png",
+    src: "/images/indianair.webp",
     titleen: "Air India",
     titlear: "الخطوط الهندية",
     titleru: "Air India",
