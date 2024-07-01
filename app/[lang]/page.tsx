@@ -22,6 +22,8 @@ export default async function Home({
       <main className={" max-w-[90vw]  mx-auto flex items-center flex-col"}>
         <header className="h-screen gap-8 pb-8 flex flex-col items-center justify-end ">
           <Image
+            loading="lazy"
+           
             quality={1}
             src="/images/logo.webp"
             className="w-40 lg:w-60"
@@ -40,6 +42,7 @@ export default async function Home({
             <div className="flex bg-white hover:bg-gray-100 text-[#11407c] font-bold py-2 px-4 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition ease-in-out duration-200 ">
               <Link href="https://wa.me/971545866066">
                 <Image
+                  loading="lazy"
                   quality={1}
                   src="/images/whats-uae.svg"
                   className="w-20 lg:w-24"
@@ -52,6 +55,7 @@ export default async function Home({
             <div className="flex bg-white hover:bg-gray-100 text-[#11407c] font-bold py-2 px-4 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition ease-in-out duration-200 ">
               <Link href="https://wa.me/963950026610">
                 <Image
+                  loading="lazy"
                   quality={1}
                   src="/images/whats-sar.svg"
                   className="w-20 lg:w-24"
@@ -99,6 +103,7 @@ export default async function Home({
         />
         <section className="custombg2 gap-2 w-screen h-[70vh] lg:h-screen flex flex-col items-center justify-center lg:flex-row ">
           <Image
+            loading="lazy"
             quality={1}
             src="/images/logobig.webp"
             className="lg:w-[40vw] w-[70vw] "
@@ -121,6 +126,7 @@ export default async function Home({
             }
           >
             <Image
+              loading="lazy"
               quality={1}
               className="transform transition-transform duration-300 h-36 ease-in-out hover:scale-110"
               src={"/images/face.svg"}
@@ -137,6 +143,7 @@ export default async function Home({
             }
           >
             <Image
+              loading="lazy"
               quality={1}
               className="h-36 duration-300 transform  transition-transform ease-in-out hover:scale-110"
               src={"/images/insta.svg"}
@@ -151,6 +158,7 @@ export default async function Home({
             href={"https://maps.app.goo.gl/7qC5aEFBgittwxY68"}
           >
             <Image
+              loading="lazy"
               quality={1}
               className="h-20 duration-300 transform  transition-transform ease-in-out hover:scale-110"
               src={"/images/map-uae.svg"}
@@ -165,6 +173,7 @@ export default async function Home({
             href={"https://maps.app.goo.gl/AURZZ5qdu8yfD9NH9"}
           >
             <Image
+              loading="lazy"
               quality={1}
               className="h-20 duration-300 transform  transition-transform ease-in-out hover:scale-110"
               src={"/images/map-sar.svg"}

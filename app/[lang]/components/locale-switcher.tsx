@@ -18,6 +18,7 @@ export default function LocaleSwitcher() {
       <ul className="flex gap-3">
         <Link href={redirectedPathName("en")}>
           <Image
+            loading="lazy"
             quality={1}
             width={50}
             height={50}
@@ -27,6 +28,7 @@ export default function LocaleSwitcher() {
         </Link>
         <Link href={redirectedPathName("ar")}>
           <Image
+            loading="lazy"
             quality={1}
             width={50}
             height={50}
@@ -36,6 +38,7 @@ export default function LocaleSwitcher() {
         </Link>
         <Link href={redirectedPathName("ru")}>
           <Image
+            loading="lazy"
             quality={1}
             width={50}
             height={50}

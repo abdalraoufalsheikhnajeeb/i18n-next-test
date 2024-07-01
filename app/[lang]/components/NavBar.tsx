@@ -48,6 +48,7 @@ const Navbar = ({
 			 backdrop-blur-md backdrop-brightness-75 h-20 w-full px-[5vw] py-2 flex items-center top-0 justify-between z-[100] fixed`}
     >
       <Image
+        loading="lazy"
         quality={1}
         className="flex-shrink-0 h-full   "
         width={100}
@@ -86,6 +87,7 @@ const Navbar = ({
         <LocaleSwitcher />
 
         <Image
+          loading="lazy"
           quality={1}
           className={`cursor-pointer ${
             isBurgerOpen && "h-16 w-16"
@@ -118,6 +120,7 @@ const Navbar = ({
             </Link>
           </div>
           <Image
+            loading="lazy"
             quality={1}
             src={`/images/hero2M.webp`}
             className="blurred-background"
