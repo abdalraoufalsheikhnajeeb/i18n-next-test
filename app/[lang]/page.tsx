@@ -18,17 +18,17 @@ export default async function Home({
   return (
     <>
       <Image
-            loading="lazy"
-            quality={10}
-            src="/images/hero.webp"
-            className="bg-gradient absolute -z-10 object-cover  h-screen w-screen"
-            alt="arrow"
-            width={1280}
-            height={720}
-          />
-      <div className=" bg-gradient absolute -z-[1]  h-screen w-screen" />
+        loading="lazy"
+        quality={10}
+        src="/images/hero.webp"
+        className="bg-gradient absolute -z-10 object-cover  h-[100dvh] w-screen"
+        alt="arrow"
+        width={1280}
+        height={720}
+      />
+      <div className=" bg-gradient absolute -z-[1]  h-[100dvh] w-screen" />
       <main className={" max-w-[90vw]  mx-auto flex items-center flex-col"}>
-        <header className="h-screen gap-8 pb-8 flex flex-col items-center justify-end ">
+        <header className="h-[100dvh] gap-8 pb-8 flex flex-col items-center justify-end ">
           <Image
             loading="lazy"
             quality={20}
@@ -79,23 +79,19 @@ export default async function Home({
 
           <div className="flex flex-wrap justify-center items-center gap-8 p-12">
             {ourProjects.map((card) => {
-             
               let title;
 
               if (dic.currLang === "ar") {
-              
                 title = card.titlear;
               } else if (dic.currLang === "ru") {
-             
                 title = card.titleru;
               } else {
-               
                 title = card.titleen;
               }
 
               return (
                 <Link href={`/${lang}/Services/${card.rout}`} key={card.id}>
-                  <AnCard  title={title} src={card.src} />
+                  <AnCard title={title} src={card.src} />
                 </Link>
               );
             })}
@@ -107,7 +103,7 @@ export default async function Home({
             lang: lang,
           }}
         />
-        <section className="custombg2 gap-2 w-screen h-[70vh] lg:h-screen flex flex-col items-center justify-center lg:flex-row ">
+        <section className="custombg2 gap-2 w-screen h-[70vh] lg:h-[100dvh] flex flex-col items-center justify-center lg:flex-row ">
           <Image
             loading="lazy"
             quality={20}
@@ -119,7 +115,6 @@ export default async function Home({
           />
         </section>
       </main>
-
     </>
   );
 }

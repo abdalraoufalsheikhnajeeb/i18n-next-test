@@ -54,7 +54,7 @@ const Locations: NextPage<LocationsProps> = async ({ params: { lang } }) => {
   };
 
   return (
-    <main className="flex bg-white flex-col items-center justify-center min-h-screen py-2 bg-gradient2">
+    <main className="flex bg-white flex-col items-center justify-center min-h-[100dvh] py-2 bg-gradient2">
       <br />
 
       <AnTitle title={dic.OurLocations} />
