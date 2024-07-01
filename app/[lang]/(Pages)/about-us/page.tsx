@@ -13,6 +13,7 @@ export default async function page({
     <section className="flex-col w-screen lg:flex-row lg:min-h-[50vh] flex bg-white px-8 lg:px-28">
       <div className="flex w-full flex-col my-12 items-center gap-6 lg:items-start overflow-visible text-black">
         <Image
+          quality={1}
           src="/images/logo.webp"
           className="w-40 lg:w-60"
           alt="arrow"
@@ -25,11 +26,11 @@ export default async function page({
         </p>
       </div>
       <Image
+        quality={1}
         src="/images/farouk.webp"
         width={500}
         height={400}
         alt="founder image"
-        quality={1}
         className="object-cover object-center lg:w-1/2 w-screen lg:custom-clip"
       />
     </section>

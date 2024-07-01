@@ -17,15 +17,32 @@ export default function LocaleSwitcher() {
     <div>
       <ul className="flex gap-3">
         <Link href={redirectedPathName("en")}>
-          <Image width={50} height={50} alt="flag" src={`/images/en.svg`} />
+          <Image
+            quality={1}
+            width={50}
+            height={50}
+            alt="flag"
+            src={`/images/en.svg`}
+          />
         </Link>
         <Link href={redirectedPathName("ar")}>
-          <Image width={50} height={50} alt="flag" src={`/images/ar.webp`} />
+          <Image
+            quality={1}
+            width={50}
+            height={50}
+            alt="flag"
+            src={`/images/ar.webp`}
+          />
         </Link>
         <Link href={redirectedPathName("ru")}>
-          <Image width={50} height={50} alt="flag" src={`/images/ru.svg`} />
+          <Image
+            quality={1}
+            width={50}
+            height={50}
+            alt="flag"
+            src={`/images/ru.svg`}
+          />
         </Link>
-       
       </ul>
     </div>
   );

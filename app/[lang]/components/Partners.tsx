@@ -86,6 +86,7 @@ const Partners = ({ dic, data }: PartnersProps) => {
               className="max-w-sm o h-96 mx-4  bg-white bg-gray-100 border rounded-lg shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg w-full"
             >
               <Image
+                quality={1}
                 width={400}
                 height={200}
                 className="rounded-t-lg aspect-video object-cover"
