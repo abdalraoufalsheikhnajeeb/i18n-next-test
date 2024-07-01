@@ -29,7 +29,7 @@ const Partners = ({ dic, data, title }: PartnersProps) => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     speed: 800,
     cssEase: "ease-in-out",
