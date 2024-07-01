@@ -1,191 +1,178 @@
-export const partners =  [
-
-  {
-    id: 1,
-    descen: "We are an authorized agent for Cham Wings Airlines, offering comprehensive flight services.",
-    descar: "نحن وكلاء معتمدون لشركة طيران أجنحة الشام، نقدم خدمات شاملة للطيران.",
-    descru: "Мы являемся официальным агентом авиакомпании Cham Wings Airlines и предлагаем полный комплекс услуг по бронированию авиабилетов.",
-    src: "/images/chamwings.webp",
-    titleen: "An authorized agent for Cham Wings Airlines",
-    titlear: "وكيل معتمد لشركة طيران أجنحة الشام",
-    titleru: "Авторизованный агент авиакомпании Cham Wings Airlines",
-  },
-  {
-    id: 2,
-    descen: "As an authorized agent for Flydubai, we provide a variety of flight booking options.",
-    descar: "بصفتنا وكلاء معتمدين لشركة فلاي دبي، نقدم مجموعة متنوعة من خيارات حجز الرحلات.",
-    descru: "Будучи официальным агентом Flydubai, мы предлагаем различные варианты бронирования авиабилетов.",
-    src: "/images/flydubai.webp",
-    titleen: "An authorized agent for Flydubai",
-    titlear: "وكيل معتمد لشركة فلاي دبي",
-    titleru: "Авторизованный агент Flydubai",
-  },
-  {
-    id: 3,
-    descen: "As authorized agents for Air Arabia, we offer competitive rates and exceptional service.",
-    descar: "بصفتنا وكلاء معتمدين لشركة العربية للطيران، نقدم أسعارًا تنافسية وخدمة استثنائية.",
-    descru: "Как официальные агенты Air Arabia, мы предлагаем конкурентоспособные цены и исключительное обслуживание.",
-    src: "/images/arabia.webp",
-    titleen: "An authorized agent for Air Arabia",
-    titlear: "وكيل معتمد لشركة العربية للطيران",
-    titleru: "Авторизованный агент Air Arabia",
-  },
-  {
-    id: 4,
-    descen: "We are proud to be authorized agents for SyrianAir, ensuring a seamless travel experience.",
-    descar: "نحن فخورون بكوننا وكلاء معتمدين لشركة السورية للطيران، مما يضمن تجربة سفر سلسة.",
-    descru: "Мы гордимся тем, что являемся официальными агентами SyrianAir, гарантируя беспрепятственное путешествие.",
-    src: "/images/syrianair.webp",
-    titleen: "An authorized agent for SyrianAir",
-    titlear: "وكيل معتمد لشركة السورية للطيران",
-    titleru: "Авторизованный агент SyrianAir",
-  },
+export const partners = [
   {
     id: 5,
-    descen: "We offer a wide range of services for Qatar Airways, catering to all your travel needs.",
-    descar: "نقدم مجموعة واسعة من الخدمات لشركة القطرية للطيران، لتلبية جميع احتياجات سفرك.",
-    descru: "Мы предлагаем широкий спектр услуг для Qatar Airways, удовлетворяющих все ваши потребности в путешествиях.",
+    descen:
+      "We offer a wide range of services for Qatar Airways, catering to all your travel needs.",
+    descar:
+      "نقدم مجموعة واسعة من الخدمات للخطوط الجوية القطرية للطيران، لتلبية جميع احتياجات سفرك.",
+    descru:
+      "Мы предлагаем широкий спектр услуг для Qatar Airways, удовлетворяющих все ваши потребности в путешествиях.",
     src: "/images/qatarairways.webp",
     titleen: "Services for Qatar Airways",
-    titlear: "خدمات لشركة القطرية للطيران",
+    titlear: "خدمات للخطوط الجوية القطرية للطيران",
     titleru: "Услуги для Qatar Airways",
   },
   {
     id: 6,
-    descen: "Explore the world with Turkish Airlines through our reliable flight booking services.",
-    descar: "استكشف العالم مع الخطوط الجوية التركية من خلال خدمات حجز الرحلات الجوية الموثوقة لدينا.",
-    descru: "Исследуйте мир с Turkish Airlines с помощью наших надежных услуг по бронированию авиабилетов.",
+    descen:
+      "Explore the world with Turkish Airlines through our reliable flight booking services.",
+    descar:
+      "استكشف العالم مع الخطوط الجوية التركية من خلال خدمات حجز الرحلات الجوية الموثوقة لدينا.",
+    descru:
+      "Исследуйте мир с Turkish Airlines с помощью наших надежных услуг по бронированию авиабилетов.",
     src: "/images/turkishairlines.webp",
     titleen: "Services for Turkish Airlines",
-    titlear: "خدمات لشركة الخطوط الجوية التركية",
+    titlear: "خدمات للخطوط الجوية الخطوط الجوية التركية",
     titleru: "Услуги для Turkish Airlines",
   },
   {
     id: 7,
-    descen: "Book your flights with Emirates through our dedicated services for a luxurious travel experience.",
-    descar: "احجز رحلاتك مع طيران الإمارات من خلال خدماتنا المخصصة لتجربة سفر فاخرة.",
-    descru: "Бронируйте билеты с Emirates через наши специализированные услуги для роскошного путешествия.",
+    descen:
+      "Book your flights with Emirates through our dedicated services for a luxurious travel experience.",
+    descar:
+      "احجز رحلاتك مع طيران الإمارات من خلال خدماتنا المخصصة لتجربة سفر فاخرة.",
+    descru:
+      "Бронируйте билеты с Emirates через наши специализированные услуги для роскошного путешествия.",
     src: "/images/emirates.webp",
     titleen: "Services for Emirates",
-    titlear: "خدمات لشركة طيران الإمارات",
+    titlear: "خدمات للخطوط الجوية طيران الإمارات",
     titleru: "Услуги для Emirates",
   },
   {
     id: 8,
-    descen: "Discover affordable travel options with EgyptAir, supported by our expert services.",
-    descar: "اكتشف خيارات السفر بأسعار معقولة مع مصر للطيران، مدعومة بخدماتنا الخبيرة.",
-    descru: "Откройте для себя доступные варианты путешествий с EgyptAir, поддерживаемые нашими экспертными услугами.",
+    descen:
+      "Discover affordable travel options with EgyptAir, supported by our expert services.",
+    descar:
+      "اكتشف خيارات السفر بأسعار معقولة مع مصر للطيران، مدعومة بخدماتنا الخبيرة.",
+    descru:
+      "Откройте для себя доступные варианты путешествий с EgyptAir, поддерживаемые нашими экспертными услугами.",
     src: "/images/egyptair.webp",
     titleen: "Services for EgyptAir",
-    titlear: "خدمات لشركة مصر للطيران",
+    titlear: "خدمات للخطوط الجوية مصر للطيران",
     titleru: "Услуги для EgyptAir",
   },
   {
     id: 9,
-    descen: "Enjoy seamless travel with Saudia, facilitated by our comprehensive booking services.",
-    descar: "استمتع بتجربة سفر سلسة مع الخطوط الجوية السعودية، من خلال خدمات الحجز الشاملة لدينا.",
-    descru: "Наслаждайтесь беспрепятственным путешествием с Saudia благодаря нашим комплексным услугам по бронированию.",
+    descen:
+      "Enjoy seamless travel with Saudia, facilitated by our comprehensive booking services.",
+    descar:
+      "استمتع بتجربة سفر سلسة مع الخطوط الجوية السعودية، من خلال خدمات الحجز الشاملة لدينا.",
+    descru:
+      "Наслаждайтесь беспрепятственным путешествием с Saudia благодаря нашим комплексным услугам по бронированию.",
     src: "/images/saudia.webp",
     titleen: "Services for Saudia",
-    titlear: "خدمات لشركة الخطوط الجوية السعودية",
+    titlear: "خدمات للخطوط الجوية الخطوط الجوية السعودية",
     titleru: "Услуги для Saudia",
   },
   {
     id: 11,
-    descen: "We offer convenient booking options for S7 Airlines to enhance your travel plans.",
-    descar: "نقدم خيارات حجز مريحة لشركة S7 Airlines لتعزيز خطط سفرك.",
-    descru: "Мы предлагаем удобные варианты бронирования для S7 Airlines, чтобы улучшить ваши планы путешествий.",
+    descen:
+      "We offer convenient booking options for S7 Airlines to enhance your travel plans.",
+    descar: "نقدم خيارات حجز مريحة للخطوط الجوية S7 Airlines لتعزيز خطط سفرك.",
+    descru:
+      "Мы предлагаем удобные варианты бронирования для S7 Airlines, чтобы улучшить ваши планы путешествий.",
     src: "/images/s7airlines.webp",
     titleen: "Services for S7 Airlines",
-    titlear: "خدمات لشركة S7 Airlines",
+    titlear: "خدمات للخطوط الجوية S7 Airlines",
     titleru: "Услуги для S7 Airlines",
   },
   {
     id: 12,
-    descen: "Book your flights with Pegasus Airlines through our efficient and reliable services.",
-    descar: "احجز رحلاتك مع بيجاسوس إيرلاينز من خلال خدماتنا الفعالة والموثوقة.",
-    descru: "Бронируйте билеты с Pegasus Airlines через наши эффективные и надежные услуги.",
+    descen:
+      "Book your flights with Pegasus Airlines through our efficient and reliable services.",
+    descar:
+      "احجز رحلاتك مع بيجاسوس إيرلاينز من خلال خدماتنا الفعالة والموثوقة.",
+    descru:
+      "Бронируйте билеты с Pegasus Airlines через наши эффективные и надежные услуги.",
     src: "/images/pegasusairlines.webp",
     titleen: "Services for Pegasus Airlines",
-    titlear: "خدمات لشركة بيجاسوس إيرلاينز",
+    titlear: "خدمات للخطوط الجوية بيجاسوس إيرلاينز",
     titleru: "Услуги для Pegasus Airlines",
   },
   {
     id: 13,
-    descen: "Explore the world with Etihad Airways, backed by our exceptional service offerings.",
-    descar: "استكشف العالم مع الاتحاد للطيران، مدعومة بعروض خدماتنا الاستثنائية.",
-    descru: "Исследуйте мир с Etihad Airways, поддерживаемыми нашими исключительными предложениями услуг.",
+    descen:
+      "Explore the world with Etihad Airways, backed by our exceptional service offerings.",
+    descar:
+      "استكشف العالم مع الاتحاد للطيران، مدعومة بعروض خدماتنا الاستثنائية.",
+    descru:
+      "Исследуйте мир с Etihad Airways, поддерживаемыми нашими исключительными предложениями услуг.",
     src: "/images/etihadairways.webp",
     titleen: "Services for Etihad Airways",
-    titlear: "خدمات لشركة الاتحاد للطيران",
+    titlear: "خدمات للخطوط الجوية الاتحاد للطيران",
     titleru: "Услуги для Etihad Airways",
   },
   {
     id: 14,
-    descen: "Experience premium travel with Middle East Airlines, supported by our top-notch services.",
-    descar: "استمتع بتجربة سفر فاخرة مع الخطوط الجوية اللبنانية، مدعومة بخدماتنا الممتازة.",
-    descru: "Путешествуйте с комфортом с Middle East Airlines, поддерживаемыми нашими первоклассными услугами.",
+    descen:
+      "Experience premium travel with Middle East Airlines, supported by our top-notch services.",
+    descar:
+      "استمتع بتجربة سفر فاخرة مع الخطوط الجوية اللبنانية، مدعومة بخدماتنا الممتازة.",
+    descru:
+      "Путешествуйте с комфортом с Middle East Airlines, поддерживаемыми нашими первоклассными услугами.",
     src: "/images/middleeastairlines.webp",
     titleen: "Services for Middle East Airlines",
-    titlear: "خدمات لشركة الخطوط الجوية اللبنانية",
+    titlear: "خدمات للخطوط الجوية الخطوط الجوية اللبنانية",
     titleru: "Услуги для Middle East Airlines",
-  }
-]
+  },
+];
 
-
-export const ourProjects = [
+export const agents = [
   {
     id: 1,
     descen:
-      "We are an authorized agent for <strong>  Cham Wings</strong> Airlines, offering comprehensive flight services.",
+      "We are an authorized agent for Cham Wings Airlines, offering comprehensive flight services.",
     descar:
-      "نحن وكلاء معتمدون لشركة طيران أجنحة الشام، نقدم خدمات شاملة للطيران.",
+      "نحن وكلاء معتمدون للخطوط الجوية طيران أجنحة الشام، نقدم خدمات شاملة للطيران.",
     descru:
-      "Мы являемся официальным агентом авиакомпании  Cham Wings Airlines и предлагаем полный комплекс услуг по бронированию авиабилетов.",
+      "Мы являемся официальным агентом авиакомпании Cham Wings Airlines и предлагаем полный комплекс услуг по бронированию авиабилетов.",
     src: "/images/chamwings.webp",
-    titleen: "An authorized agent for  Cham Wings Airlines",
-    titlear: "وكيل معتمد لشركة طيران أجنحة الشام",
-    titleru: "Авторизованный агент авиакомпании  Cham Wings Airlines",
+    titleen: "An authorized agent for Cham Wings Airlines",
+    titlear: "وكيل معتمد للخطوط الجوية طيران أجنحة الشام",
+    titleru: "Авторизованный агент авиакомпании Cham Wings Airlines",
   },
   {
     id: 2,
     descen:
-      "Fly with confidence through our authorized Flydubai agent services. We ensure a smooth and efficient booking process for all destinations.",
+      "As an authorized agent for Flydubai, we provide a variety of flight booking options.",
     descar:
-      "سافر بثقة من خلال خدمات وكيل فلاي دبي المعتمد. نضمن لك عملية حجز سلسة وفعالة لجميع الوجهات.",
+      "بصفتنا وكلاء معتمدين للخطوط الجوية فلاي دبي، نقدم مجموعة متنوعة من خيارات حجز الرحلات.",
     descru:
-      "Летайте с уверенностью с помощью наших услуг авторизованного агента Flydubai. Мы обеспечиваем гладкий и эффективный процесс бронирования для всех направлений.",
-    src: "/images/flyDubai.webp",
-    titleen: "Authorized Flydubai agent",
-    titlear: "وكيل معتمد لشركة فلاي دبي",
+      "Будучи официальным агентом Flydubai, мы предлагаем различные варианты бронирования авиабилетов.",
+    src: "/images/flydubai.webp",
+    titleen: "An authorized agent for Flydubai",
+    titlear: "وكيل معتمد للخطوط الجوية فلاي دبي",
     titleru: "Авторизованный агент Flydubai",
   },
   {
     id: 3,
     descen:
-      "As an authorized agent of Air Arabia, we offer reliable and affordable flight reservations. Your travel comfort is our priority.",
+      "As authorized agents for Air Arabia, we offer competitive rates and exceptional service.",
     descar:
-      "بصفتنا وكلاء معتمدين لشركة العربية للطيران، نقدم حجوزات طيران موثوقة وبأسعار معقولة. راحتك أثناء السفر هي أولويتنا.",
+      "بصفتنا وكلاء معتمدين للخطوط الجوية العربية للطيران، نقدم أسعارًا تنافسية وخدمة استثنائية.",
     descru:
-      "Как авторизованный агент Air Arabia, мы предлагаем надежное и доступное бронирование авиабилетов. Ваш комфорт во время путешествий — наш приоритет.",
+      "Как официальные агенты Air Arabia, мы предлагаем конкурентоспособные цены и исключительное обслуживание.",
     src: "/images/arabia.webp",
-    titleen: "Authorized agent of Air Arabia",
-    titlear: "وكيل معتمد لشركة العربية للطيران",
+    titleen: "An authorized agent for Air Arabia",
+    titlear: "وكيل معتمد للخطوط الجوية العربية للطيران",
     titleru: "Авторизованный агент Air Arabia",
   },
   {
     id: 4,
     descen:
-      "Book your Syrian air reservations with ease and convenience. Enjoy a hassle-free booking experience tailored to your needs.",
+      "We are proud to be authorized agents for SyrianAir, ensuring a seamless travel experience.",
     descar:
-      "احجز رحلاتك الجوية السورية بسهولة وراحة. استمتع بتجربة حجز خالية من المتاعب تلبي احتياجاتك.",
+      "نحن فخورون بكوننا وكلاء معتمدين للخطوط الجوية السورية للطيران، مما يضمن تجربة سفر سلسة.",
     descru:
-      "Бронируйте авиабилеты на сирийские рейсы легко и удобно. Наслаждайтесь беспроблемным процессом бронирования, адаптированным к вашим потребностям.",
-    src: "/images/syrianplane.webp",
-    titleen: "Syrian air reservations",
-    titlear: "حجوزات الطيران السورية",
-    titleru: "Бронирование сирийских авиабилетов",
+      "Мы гордимся тем, что являемся официальными агентами SyrianAir, гарантируя беспрепятственное путешествие.",
+    src: "/images/syrianair.webp",
+    titleen: "An authorized agent for SyrianAir",
+    titlear: "وكيل معتمد للخطوط الجوية السورية للطيران",
+    titleru: "Авторизованный агент SyrianAir",
   },
+];
+
+export const ourProjects = [
   {
     id: 5,
     descen: "We specialize in flight reservations to all parts of the world.",
@@ -288,4 +275,3 @@ export const ourProjects = [
     titleru: "Услуги такси в аэропорту",
   },
 ];
-

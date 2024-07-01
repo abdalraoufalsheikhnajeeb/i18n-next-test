@@ -40,7 +40,7 @@ export default async function Home({
               <Link href="https://wa.me/971545866066">
                 <Image
                   src="/images/whats-uae.svg"
-                  className="w-14 lg:w-18"
+                  className="w-20 lg:w-24"
                   alt="arrow"
                   width={250}
                   height={200}
@@ -51,7 +51,7 @@ export default async function Home({
               <Link href="https://wa.me/963950026610">
                 <Image
                   src="/images/whats-sar.svg"
-                  className="w-14 lg:w-18"
+                  className="w-20 lg:w-24"
                   alt="arrow"
                   width={250}
                   height={200}
@@ -60,10 +60,8 @@ export default async function Home({
             </div>
           </div>
         </header>
-        <section>
-          
-        </section>
-        
+ 
+
         <section className="w-screen flex flex-col items-center gap-4 custombg">
           <AnTitle title={dic?.someProjects} />
 
@@ -84,17 +82,19 @@ export default async function Home({
               }
 
               return (
+                <Link href="" key={card.id}>
                 <AnCard
-                  key={card.id}
+                
                   desc={desc}
                   title={title}
                   src={card.src}
                 />
+                </Link>
               );
             })}
           </div>
         </section>
-        <Partners   dic={dic}/>
+
         <Locations
           params={{
             lang: lang,

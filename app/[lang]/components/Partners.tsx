@@ -1,23 +1,36 @@
 "use client";
 import React from "react";
 import AnTitle from "./AnTitle.tsx";
-import { partners } from "../data";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { type getDictionary } from "../../../get-dictionary";
 import Image from "next/image";
-import "./Partners.css"
-const Partners = ({
-  dic,
-}: {
+import "./Partners.css";
+
+type Partner = {
+  id: number;
+  descen: string;
+  descar: string;
+  descru: string;
+  src: string;
+  titleen: string;
+  titlear: string;
+  titleru: string;
+};
+
+type PartnersProps = {
   dic: Awaited<ReturnType<typeof getDictionary>>;
-}) => {
+  data: Partner[];
+};
+
+const Partners = ({ dic, data }: PartnersProps) => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3 ,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 3000,
@@ -49,10 +62,10 @@ const Partners = ({
   };
 
   return (
-    <section className="our-partners-section px-8 py-8">
+    <section className="our-partners-section  px-8 py-8">
       <AnTitle title={dic.OurPartners} />
       <Slider {...settings}>
-        {partners.map((card, index) => {
+        {data.map((card, index) => {
           let desc;
           let title;
 

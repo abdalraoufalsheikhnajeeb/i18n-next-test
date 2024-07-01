@@ -14,11 +14,11 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-	title: 'Alnujoom almasiya',
-	description: '',
+  title: 'Alnujoom almasiya',
+  description: 'cham wings authorized agent | وكيل معتمد لأجنحةالشام ',
 };
 
-export default async function Root({
+export default async function RootLayout({
   children,
   params,
 }: {
@@ -40,7 +40,6 @@ export default async function Root({
       <body dir={params.lang === "ar" ? "rtl" : "ltr"} className={`overflow-x-hidden ${cairo.className}`}>
         <Navbar dic={dic} />
         {children}
-       
       </body>
     </html>
   );
