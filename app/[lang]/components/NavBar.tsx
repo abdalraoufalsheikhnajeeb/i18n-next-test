@@ -84,7 +84,7 @@ const Navbar = ({
         </Link>
       </div>
       <div className="flex items-center h-14 gap-4">
-        <Link className="flex gap-2 justify-end items-center" href={`/${lang}/WorldClock`}>
+        <Link className="flex gap-2 justify-end items-center font-bold " href={`/${lang}/WorldClock`}>
         <Image
         loading="lazy"
         quality={1}

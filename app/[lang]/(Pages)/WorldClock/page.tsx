@@ -105,20 +105,20 @@ const WorldClock = ({ params: { lang } }: { params: { lang: Locale } }) => {
     };
 
     updateTime();
-    const interval = setInterval(updateTime, 60000);
+    const interval = setInterval(updateTime, 10000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="container mx-auto p-4 bg3 pt-28">
       <h1 className="text-4xl font-bold text-center mb-8">{}</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-4">
         {timeZones.map((zone) => (
           <div
             key={zone.nameEN}
             className="bg-white shadow rounded-lg p-6 text-center"
           >
-            <h2 className="text-2xl text-primary font-semibold mb-2">
+            <h2 className="text-2xl font-bold text-primary font-semibold mb-2">
               {lang === "en"
                 ? zone.nameEN
                 : lang === "ar"
