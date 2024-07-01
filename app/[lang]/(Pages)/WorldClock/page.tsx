@@ -1,9 +1,14 @@
-'use server';
+"use client";
 
-import { FC } from 'react';
-import { Locale } from '../../../../i18n-config';
+import { useState, useEffect } from "react";
+import { Locale } from "../../../../i18n-config";
 
 const timeZones = [
+  { nameAR: "روما", nameEN: "Rome", nameRU: "Рим", tz: "Europe/Rome" },
+  { nameAR: "دمشق", nameEN: "Damascus", nameRU: "Дамаск", tz: "Asia/Damascus" },
+  { nameAR: "بيروت", nameEN: "Beirut", nameRU: "Бейрут", tz: "Asia/Beirut" },
+  { nameAR: "عمان", nameEN: "Amman", nameRU: "Амман", tz: "Asia/Amman" },
+  { nameAR: "الرياض", nameEN: "Riyadh", nameRU: "Эр-Рияд", tz: "Asia/Riyadh" },
   {
     nameAR: "نيويورك",
     nameEN: "New York",
@@ -34,7 +39,6 @@ const timeZones = [
   { nameAR: "القاهرة", nameEN: "Cairo", nameRU: "Каир", tz: "Africa/Cairo" },
   { nameAR: "موسكو", nameEN: "Moscow", nameRU: "Москва", tz: "Europe/Moscow" },
   { nameAR: "دبي", nameEN: "Dubai", nameRU: "Дубай", tz: "Asia/Dubai" },
-  { nameAR: "مومباي", nameEN: "Mumbai", nameRU: "Мумбаи", tz: "Asia/Kolkata" },
   {
     nameAR: "شنغهاي",
     nameEN: "Shanghai",
@@ -67,35 +71,47 @@ const timeZones = [
   },
   { nameAR: "برلين", nameEN: "Berlin", nameRU: "Берлин", tz: "Europe/Berlin" },
   { nameAR: "مدريد", nameEN: "Madrid", nameRU: "Мадрид", tz: "Europe/Madrid" },
-  { nameAR: "روما", nameEN: "Rome", nameRU: "Рим", tz: "Europe/Rome" },
+  {
+    nameAR: "كوالالمبور",
+    nameEN: "Kuala Lumpur",
+    nameRU: "Куала-Лумпур",
+    tz: "Asia/Kuala_Lumpur",
+  },
 ];
 
 interface Time {
   [key: string]: string;
 }
 
-const getTime = async (tz: string) => {
-  return new Date().toLocaleString('en-US', {
+const getTime = (tz: string) => {
+  return new Date().toLocaleString("en-US", {
     timeZone: tz,
-    timeStyle: 'medium',
-    hourCycle: 'h24',
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h24",
   });
 };
 
-const WorldClock: FC<{ params: { lang: Locale } }> = async ({
-  params: { lang },
-}) => {
-  const times: Time = {};
-  const timePromises = timeZones.map(async ({ nameEN, tz }) => {
-    const time = await getTime(tz);
-    times[nameEN] = time;
-  });
+const WorldClock = ({ params: { lang } }: { params: { lang: Locale } }) => {
+  const [times, setTimes] = useState<Time>({});
 
-  await Promise.all(timePromises);
+  useEffect(() => {
+    const updateTime = () => {
+      const newTimes: Time = {};
+      timeZones.forEach(({ nameEN, tz }) => {
+        newTimes[nameEN] = getTime(tz);
+      });
+      setTimes(newTimes);
+    };
+
+    updateTime();
+    const interval = setInterval(updateTime, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="container mx-auto p-4 bg3 pt-28">
-      <h1 className="text-4xl font-bold text-center mb-8">World Clock</h1>
+      <h1 className="text-4xl font-bold text-center mb-8">{}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {timeZones.map((zone) => (
           <div
@@ -103,7 +119,11 @@ const WorldClock: FC<{ params: { lang: Locale } }> = async ({
             className="bg-white shadow rounded-lg p-6 text-center"
           >
             <h2 className="text-2xl text-primary font-semibold mb-2">
-              {lang === 'en' ? zone.nameEN : lang === 'ar' ? zone.nameAR : zone.nameRU}
+              {lang === "en"
+                ? zone.nameEN
+                : lang === "ar"
+                ? zone.nameAR
+                : zone.nameRU}
             </h2>
             <p className="text-xl text-blue-600">{times[zone.nameEN]}</p>
           </div>
