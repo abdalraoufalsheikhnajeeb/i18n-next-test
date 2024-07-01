@@ -10,7 +10,7 @@ export default async function page({
   const dic = await getDictionary(lang);
 
   return (
-    <section className="flex-col w-screen lg:flex-row lg:min-h-[50vh] flex bg-white px-8 lg:px-28">
+    <section className="flex-col w-screen lg:flex-row lg:min-h-[50vh] flex bg-white px-8 lg:px-28 bg-gradient2 pt-20 gap-4 ">
       <div className="flex w-full flex-col my-12 items-center gap-6 lg:items-start overflow-visible text-black">
         <Image
           loading="lazy"

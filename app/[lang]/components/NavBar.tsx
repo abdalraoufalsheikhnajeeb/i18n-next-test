@@ -76,7 +76,7 @@ const Navbar = ({
         </Link> */}
         <Link
           className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
-            pathname === "/about" ? "active" : ""
+            pathname === "/about-us" ? "active" : ""
           }`}
           href={`/${lang}/about-us`}
         >
@@ -119,17 +119,19 @@ const Navbar = ({
                 pathname === "/" ? "active" : ""
               }`}
               href={`/${lang}`}
+              onClick={()=> setIsBurgerOpen(false)}
             >
               {dic?.Home}
             </Link>
-            {/* <Link
+            <Link
               className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
-                pathname === "/about" ? "active" : ""
+                pathname === "/about-us" ? "active" : ""
               }`}
-              href={`/${lang}/ourTours`}
+              href={`/${lang}/about-us`}
+              onClick={()=> setIsBurgerOpen(false)}
             >
-              {dic?.ourTours}
-            </Link> */}
+              {dic?.aboutUs}
+            </Link>
           </div>
           <Image
             loading="lazy"

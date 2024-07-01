@@ -29,7 +29,7 @@ const Locations: NextPage<LocationsProps> = async ({ params: { lang } }) => {
     locationDetails:
       "Hapag-Lloyd building - Road - القرهود - دبي - الإمارات العربية المتحدة",
     phoneNumber: "+971545866066",
-    addClass: "",
+    addClass: "bg-gradient2",
     whatsLink: "https://wa.me/971545866066",
   };
 
