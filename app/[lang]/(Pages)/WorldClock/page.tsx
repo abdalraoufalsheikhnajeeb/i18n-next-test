@@ -55,8 +55,8 @@ const WorldClock: React.FC = () => {
   }, []);
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-4xl font-bold text-center mb-8">World Clock</h1>
+    <div className="container mx-auto p-4 bg3 pt-28">
+      <h1 className="text-4xl font-bold  text-center mb-8">World Clock</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {timeZones.map(({ name }) => (
           <div key={name} className="bg-white shadow rounded-lg p-6 text-center">

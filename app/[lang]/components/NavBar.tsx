@@ -84,8 +84,17 @@ const Navbar = ({
         </Link>
       </div>
       <div className="flex items-center h-14 gap-4">
-        <Link href={`/${lang}/worldClock`}>
-        {dic.worldClock}
+        <Link className="flex gap-2 justify-end items-center" href={`/${lang}/WorldClock`}>
+        <Image
+        loading="lazy"
+        quality={1}
+        className="flex-shrink-0 h-10"
+        width={50}
+        height={50}
+        src="/images/clock.svg"
+        alt="clock"
+      />
+        <span>{dic.worldClock}</span>
         </Link>
         <LocaleSwitcher />
 

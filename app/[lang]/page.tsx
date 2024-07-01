@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ourProjects } from "./data";
 import AnTitle from "./components/AnTitle";
 import Locations from "./components/Locations";
-import WorldClock from "./(Pages)/WorldClock/paeg";
+import WorldClock from "./(Pages)/WorldClock/page";
 
 export default async function Home({
   params: { lang },
@@ -74,29 +74,28 @@ export default async function Home({
             </div>
           </div>
         </header>
-        <WorldClock/>
         <section className="w-screen flex flex-col items-center gap-4 custombg">
           <AnTitle title={dic?.someProjects} />
 
           <div className="flex flex-wrap justify-center items-center gap-8 p-12">
             {ourProjects.map((card) => {
-              let desc;
+             
               let title;
 
               if (dic.currLang === "ar") {
-                desc = card.descar;
+              
                 title = card.titlear;
               } else if (dic.currLang === "ru") {
-                desc = card.descru;
+             
                 title = card.titleru;
               } else {
-                desc = card.descen;
+               
                 title = card.titleen;
               }
 
               return (
-                <Link href="" key={card.id}>
-                  <AnCard desc={desc} title={title} src={card.src} />
+                <Link href={`/${lang}/Services/${card.rout}`} key={card.id}>
+                  <AnCard  title={title} src={card.src} />
                 </Link>
               );
             })}
@@ -120,77 +119,7 @@ export default async function Home({
           />
         </section>
       </main>
-      <footer
-        className={`footer pt-10 flex pb-4 justify-center items-center flex-col gap-4 w-full`}
-      >
-        <span className="text-2xl text-gray-700 ">{dic?.followUs}</span>
-        <div className="flex gap-4 p-4 items-center justify-center">
-          <a
-            title="whatsapp uea"
-            target="_blank"
-            href={
-              "https://www.facebook.com/profile.php?id=61557919387064&mibextid=LQQJ4d"
-            }
-          >
-            <Image
-              loading="lazy"
-              quality={20}
-              className="transform transition-transform duration-300 h-36 ease-in-out hover:scale-110"
-              src={"/images/face.svg"}
-              width={100}
-              height={100}
-              alt={"facebook icon"}
-            />
-          </a>
-          <a
-            title="instagram"
-            target="_blank"
-            href={
-              "https://www.instagram.com/alnujoom_almasiya?igsh=Z3duaThqemhtZXpr&utm_source=qr"
-            }
-          >
-            <Image
-              loading="lazy"
-              quality={20}
-              className="h-36 duration-300 transform  transition-transform ease-in-out hover:scale-110"
-              src={"/images/insta.svg"}
-              width={100}
-              height={100}
-              alt={"instagram link"}
-            />
-          </a>
-          <a
-            title="UAE location"
-            target="_blank"
-            href={"https://maps.app.goo.gl/7qC5aEFBgittwxY68"}
-          >
-            <Image
-              loading="lazy"
-              quality={20}
-              className="h-20 duration-300 transform  transition-transform ease-in-out hover:scale-110"
-              src={"/images/map-uae.svg"}
-              width={100}
-              height={100}
-              alt={"UAE location"}
-            />
-          </a>
-          <a
-            title="instagram"
-            target="_blank"
-            href={"https://maps.app.goo.gl/AURZZ5qdu8yfD9NH9"}
-          >
-            <Image
-              loading="lazy"
-              quality={20}
-              className="h-20 duration-300 transform  transition-transform ease-in-out hover:scale-110"
-              src={"/images/map-sar.svg"}
-              width={100}
-              height={100}
-              alt={"syria location"}
-            />
-          </a>
-        </div>
-      </footer>
+
     </>
   );
 }

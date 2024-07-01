@@ -11,9 +11,6 @@ import "./Partners.css";
 
 type Partner = {
   id: number;
-  descen: string;
-  descar: string;
-  descru: string;
   src: string;
   titleen: string;
   titlear: string;
@@ -23,9 +20,10 @@ type Partner = {
 type PartnersProps = {
   dic: Awaited<ReturnType<typeof getDictionary>>;
   data: Partner[];
+  title : string
 };
 
-const Partners = ({ dic, data }: PartnersProps) => {
+const Partners = ({ dic, data , title }: PartnersProps) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -52,32 +50,28 @@ const Partners = ({ dic, data }: PartnersProps) => {
           slidesToScroll: 1,
         },
       },
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        },
-      },
+      
     ],
   };
 
   return (
     <section className="our-partners-section  px-8 py-8">
-      <AnTitle title={dic.OurPartners} />
+      <AnTitle title={title} />
+      <br />
+      <br />
       <Slider {...settings}>
         {data.map((card, index) => {
-          let desc;
+       
           let title;
 
           if (dic.currLang === "ar") {
-            desc = card.descar;
+            
             title = card.titlear;
           } else if (dic.currLang === "ru") {
-            desc = card.descru;
+          
             title = card.titleru;
           } else {
-            desc = card.descen;
+            
             title = card.titleen;
           }
 
@@ -100,7 +94,7 @@ const Partners = ({ dic, data }: PartnersProps) => {
                   {title}
                 </h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  {desc}
+                 
                 </p>
               </div>
             </div>
