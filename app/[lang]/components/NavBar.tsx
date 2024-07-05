@@ -77,11 +77,11 @@ const Navbar = ({
           {dic?.aboutUs}
         </Link>
         <Link
-         className={`text-primary text-xl z-20 relative hover:bg-primary-500/40  px-3 py-2 rounded-md  ${
-          pathname === `/${lang}/WorldClock`
-            ? "underline underline-offset-8 font-bold"
-            : ""
-        }`}
+          className={`text-primary text-xl z-20 relative hover:bg-primary-500/40  px-3 py-2 rounded-md  ${
+            pathname === `/${lang}/WorldClock`
+              ? "underline underline-offset-8 font-bold"
+              : ""
+          }`}
           href={`/${lang}/WorldClock`}
         >
           <span>{dic.worldClock}</span>
@@ -102,37 +102,34 @@ const Navbar = ({
         />
       </div>
       {isBurgerOpen && (
-        
-          <div className="flex bg-white w-screen h-screen flex-col fixed top-[60vh] left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-4 justify-center items-center z-50">
-            <Link
-              className={`text-primary text-xl z-20 relative hover:bg-primary-500/40 hover:text-primary px-3 py-2 rounded-md  ${
-                pathname === "/" ? "active" : ""
-              }`}
-              href={`/${lang}`}
-              onClick={() => setIsBurgerOpen(false)}
-            >
-              {dic?.Home}
-            </Link>
-            <Link
-              className={`text-primary text-xl z-20 relative hover:bg-primary-500/40 hover:text-primary px-3 py-2 rounded-md  ${
-                pathname === "/about-us" ? "active" : ""
-              }`}
-              href={`/${lang}/about-us`}
-              onClick={() => setIsBurgerOpen(false)}
-            >
-              {dic?.aboutUs}
-            </Link>
-            <Link
-             className={`text-primary text-xl z-20 relative hover:bg-primary-500/40 hover:text-primary px-3 py-2 rounded-md  ${
+        <div className="flex bg-white w-screen h-screen flex-col fixed top-[60vh] left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-4 justify-center items-center z-50">
+          <Link
+            className={`text-primary text-xl z-20 relative hover:bg-primary-500/40 hover:text-primary px-3 py-2 rounded-md  ${
+              pathname === "/" ? "active" : ""
+            }`}
+            href={`/${lang}`}
+            onClick={() => setIsBurgerOpen(false)}
+          >
+            {dic?.Home}
+          </Link>
+          <Link
+            className={`text-primary text-xl z-20 relative hover:bg-primary-500/40 hover:text-primary px-3 py-2 rounded-md  ${
+              pathname === "/about-us" ? "active" : ""
+            }`}
+            href={`/${lang}/about-us`}
+            onClick={() => setIsBurgerOpen(false)}
+          >
+            {dic?.aboutUs}
+          </Link>
+          <Link
+            className={`text-primary text-xl z-20 relative hover:bg-primary-500/40 hover:text-primary px-3 py-2 rounded-md  ${
               pathname === `/${lang}/WorldClock` ? "active" : ""
             }`}
-              href={`/${lang}/WorldClock`}
-            >
-             
-              <span>{dic.worldClock}</span>
-            </Link>
-          </div>
-        
+            href={`/${lang}/WorldClock`}
+          >
+            <span>{dic.worldClock}</span>
+          </Link>
+        </div>
       )}
     </nav>
   );
