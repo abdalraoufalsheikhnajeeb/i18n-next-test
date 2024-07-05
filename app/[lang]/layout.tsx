@@ -8,7 +8,7 @@ import { Tajawal } from "next/font/google";
 import Footer from "./components/Footer";
 
 // Importing Tajawal for Arabic with weights 400 and 700
-const tajawal = Tajawal({ subsets: ["latin", "arabic"], weight: ["400", "700"] });
+const tajawal = Tajawal({ subsets: ["latin", "arabic"], weight: ["400", "700", "900"] });
 
 
 

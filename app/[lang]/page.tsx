@@ -18,9 +18,9 @@ export default async function Home({
     <>
       <Image
         loading="lazy"
-        quality={10}
+        quality={60}
         src="/images/hero.webp"
-        className="bg-gradient absolute -z-10 object-cover  h-[100dvh] w-screen"
+        className="bg-gradient absolute -z-10 object-cover  h-[100dvh] w-screen opacity-70"
         alt="arrow"
         width={1280}
         height={720}

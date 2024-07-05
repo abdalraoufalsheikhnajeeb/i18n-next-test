@@ -40,12 +40,12 @@ const Navbar = ({
 
   const [selectedPageIndex, setSelectedPageIndex] = useState(0);
   const pathname = usePathname();
-
+  console.log("pathname",pathname )
   return (
     <nav
       className={`
 				
-			 backdrop-blur-md backdrop-brightness-75 h-20 w-full px-[5vw] py-2 flex items-center top-0 justify-between z-[100] fixed`}
+			 bg-white backdrop-brightness-125 h-20 w-full px-[5vw] py-2 flex items-center top-0 justify-between z-[100] fixed`}
     >
       <Image
         loading="lazy"
@@ -59,8 +59,8 @@ const Navbar = ({
 
       <div className="hidden lg:flex ms-10  items-baseline space-x-4">
         <Link
-          className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
-            pathname === "/" ? "active" : ""
+          className={`text-primary text-xl z-20 relative hover:bg-primary-500/40  px-3 py-2 rounded-md  ${
+            pathname === `/${lang}` ? "underline underline-offset-[12px] font-bold" : ""
           }`}
           href={`/${lang}`}
         >
@@ -75,8 +75,8 @@ const Navbar = ({
           {dic?.ourTours}
         </Link> */}
         <Link
-          className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
-            pathname === "/about-us" ? "active" : ""
+          className={`text-primary text-xl z-20 relative hover:bg-primary-500/40  px-3 py-2 rounded-md  ${
+            pathname === `/${lang}/about-us` ? "underline underline-offset-8 font-bold" : ""
           }`}
           href={`/${lang}/about-us`}
         >

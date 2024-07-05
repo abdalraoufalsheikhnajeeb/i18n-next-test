@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#11407c',
-        accent: '#f1bc19',
+        accent: '#cc9c21',
       },
       // backgroundImage: {
       //   'hero': "url('/images/hero.webp')",
