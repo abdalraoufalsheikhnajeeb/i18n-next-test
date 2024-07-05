@@ -18,7 +18,7 @@ export default async function Home({
     <>
       <Image
         loading="lazy"
-        quality={60}
+        quality={20}
         src="/images/hero.webp"
         className="bg-gradient absolute -z-10 object-cover  h-[100dvh] w-screen opacity-70"
         alt="arrow"
@@ -30,7 +30,7 @@ export default async function Home({
         <header className="h-[100dvh] gap-8 pb-8 flex flex-col items-center justify-end ">
           <Image
             loading="lazy"
-            quality={20}
+            quality={1}
             src="/images/logo.webp"
             className="w-40 lg:w-60"
             alt="arrow"
@@ -49,7 +49,7 @@ export default async function Home({
               <Link href="https://wa.me/971545866066">
                 <Image
                   loading="lazy"
-                  quality={20}
+                  quality={1}
                   src="/images/whats-uae.svg"
                   className="w-20 lg:w-24"
                   alt="arrow"
@@ -62,7 +62,7 @@ export default async function Home({
               <Link href="https://wa.me/963950026610">
                 <Image
                   loading="lazy"
-                  quality={20}
+                  quality={1}
                   src="/images/whats-sar.svg"
                   className="w-20 lg:w-24"
                   alt="arrow"
