@@ -37,15 +37,15 @@ export default async function Home({
             width={250}
             height={200}
           />
-          <h2 className="text-5xl lg:text-5xl max-w-3xl font-bold  text-[#11407c]  text-center">
+          <h2 className="text-5xl lg:text-5xl max-w-3xl font-bold  text-primary  text-center">
             {dic?.homeText}
           </h2>
 
-          <button className="text-2xl lg:text-3xl max-w-3xl font-bold text-[#11407c]  text-center">
+          <button className="text-2xl lg:text-3xl max-w-3xl font-bold text-primary  text-center">
             {dic.contactUsTitle}
           </button>
           <div className="flex gap-4">
-            <div className="flex bg-white hover:bg-gray-100 text-[#11407c] font-bold py-2 px-4 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition ease-in-out duration-200 ">
+            <div className="flex  hover:bg-gray-100 text-primary font-bold py-2 px-4 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition ease-in-out duration-200 ">
               <Link href="https://wa.me/971545866066">
                 <Image
                   loading="lazy"
@@ -58,7 +58,7 @@ export default async function Home({
                 />
               </Link>
             </div>
-            <div className="flex bg-white hover:bg-gray-100 text-[#11407c] font-bold py-2 px-4 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition ease-in-out duration-200 ">
+            <div className="flex  hover:bg-gray-100 text-primary font-bold py-2 px-4 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition ease-in-out duration-200 ">
               <Link href="https://wa.me/963950026610">
                 <Image
                   loading="lazy"
@@ -90,7 +90,7 @@ export default async function Home({
 
               return (
                 <Link href={`/${lang}/Services/${card.rout}`} key={card.id}>
-                  <AnCard title={title} src={card.src} />
+                  <AnCard title={title} src={`/images/${card.rout}.webp`} />
                 </Link>
               );
             })}
@@ -102,17 +102,6 @@ export default async function Home({
             lang: lang,
           }}
         />
-        <section className="custombg2 gap-2 w-screen h-[70vh] lg:h-[100dvh] flex flex-col items-center justify-center lg:flex-row ">
-          <Image
-            loading="lazy"
-            quality={20}
-            src="/images/logobig.webp"
-            className="lg:w-[40vw] w-[70vw] "
-            alt="arrow"
-            width={600}
-            height={600}
-          />
-        </section>
       </main>
     </>
   );

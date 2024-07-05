@@ -3,12 +3,14 @@ import { i18n, type Locale } from "../../i18n-config";
 import Head from "next/head";
 import "./globals.css";
 import { getDictionary } from "../../get-dictionary";
-import Navbar from "./components/NavBar";
-
-import { Cairo } from "next/font/google";
+import Navbar from "./components/NavBar"; 
+import { Tajawal } from "next/font/google";
 import Footer from "./components/Footer";
 
-const cairo = Cairo({ subsets: ["latin"] });
+// Importing Tajawal for Arabic with weights 400 and 700
+const tajawal = Tajawal({ subsets: ["latin", "arabic"], weight: ["400", "700"] });
+
+
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -17,7 +19,7 @@ export async function generateStaticParams() {
 export const metadata: Metadata = {
   title:
     "Alnujoom Almasiya for travel and tourism | النجوم الماسية للسياحة والسفر",
-  description: "cham wings authorized agent | وكيل معتمد لأجنحةالشام ",
+  description: "cham wings authorized agent | وكيل معتمد لأجنحة الشام",
 };
 
 export default async function RootLayout({
@@ -55,7 +57,7 @@ export default async function RootLayout({
       </Head>
       <body
         dir={params.lang === "ar" ? "rtl" : "ltr"}
-        className={`overflow-x-hidden ${cairo.className}`}
+        className={`overflow-x-hidden text-primary bg3 ${tajawal.className}`}
       >
         <Navbar dic={dic} />
         {children}

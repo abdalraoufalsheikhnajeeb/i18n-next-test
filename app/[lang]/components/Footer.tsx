@@ -12,7 +12,7 @@ export default async function Footer({
     <footer
       className={`footer pt-10 flex pb-4 justify-center items-center flex-col gap-4 w-full`}
     >
-      <span className="text-2xl text-gray-700 ">{dic?.followUs}</span>
+      <span className="text-3xl text-primary ">{dic?.followUs}</span>
       <div className="flex gap-4 p-4 items-center justify-center">
         <a
           title="whatsapp uea"

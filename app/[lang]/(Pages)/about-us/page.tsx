@@ -10,11 +10,11 @@ export default async function page({
   const dic = await getDictionary(lang);
 
   return (
-    <section className="flex-col w-screen lg:flex-row lg:min-h-[50vh] flex bg-white px-8 lg:px-28 bg-gradient2 pt-20 gap-4 ">
-      <div className="flex w-full flex-col my-12 items-center gap-6 lg:items-start overflow-visible text-[#11407c]">
+    <section className="flex-col w-screen lg:flex-row lg:min-h-[50vh] flex  px-8 lg:px-28  pt-20 gap-4 ">
+      <div className="flex w-full flex-col my-12 items-center gap-6 lg:items-start overflow-visible text-primary">
         <Image
           loading="lazy"
-          quality={20}
+          quality={60}
           src="/images/logo.webp"
           className="w-40 lg:w-60"
           alt="arrow"

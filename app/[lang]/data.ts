@@ -59,7 +59,7 @@ export const partners = [
     id: 9,
     src: "/images/middleeastairlines.webp",
     titleen: "Middle East Airlines",
-    titlear: "الشرق الاوسط للخطوط الجوية",
+    titlear: "طيران الشرق الاوسط ",
     titleru: "Middle East Airlines",
   },
   {
@@ -84,7 +84,6 @@ export const partners = [
     titleru: "Air France",
   },
 ];
-
 
 export const agents = [
   {
@@ -123,8 +122,6 @@ export const agents = [
 export const ourProjects = [
   {
     id: 5,
-
-    src: "/images/reservations.webp",
     titleen: "Flight reservations to all parts of the world",
     titlear: "حجوزات الطيران إلى جميع أنحاء العالم",
     titleru: "Бронирование авиабилетов во все уголки мира",
@@ -132,8 +129,6 @@ export const ourProjects = [
   },
   {
     id: 6,
-
-    src: "/images/aroundworld.webp",
     titleen: "Tours, UAE, Russia, Türkiye,...",
     titlear: "جولات، الإمارات، روسيا، تركيا",
     titleru: "Туры, ОАЭ, Россия, Турция ,...",
@@ -141,8 +136,6 @@ export const ourProjects = [
   },
   {
     id: 7,
-
-    src: "/images/hotel.webp",
     titleen: "Hotel reservations",
     titlear: "حجوزات الفنادق",
     titleru: "Бронирование отелей",
@@ -150,8 +143,6 @@ export const ourProjects = [
   },
   {
     id: 8,
-
-    src: "/images/visas.webp",
     titleen: "Travel visas",
     titlear: "تأشيرات السفر",
     titleru: "Туристические визы",
@@ -159,17 +150,13 @@ export const ourProjects = [
   },
   {
     id: 9,
-
-    src: "/images/insurance.webp",
     titleen: "Travel insurance",
     titlear: "تأمين السفر",
     titleru: "Страхование путешествий",
-    rout: "traveltourism",
+    rout: "Travelinsurance",
   },
   {
     id: 10,
-
-    src: "/images/tourism.webp",
     titleen: "Tourism services",
     titlear: "خدمات السياحة",
     titleru: "Туристические услуги",
@@ -177,8 +164,6 @@ export const ourProjects = [
   },
   {
     id: 11,
-
-    src: "/images/honeymoon.webp",
     titleen: "Honeymoon trips",
     titlear: "رحلات شهر العسل",
     titleru: "Свадебные путешествия",
@@ -186,10 +171,174 @@ export const ourProjects = [
   },
   {
     id: 12,
-    src: "/images/taxi.webp",
     titleen: "Airport taxi services",
     titlear: "خدمات سيارات الأجرة في المطار",
     titleru: "Услуги такси в аэропорту",
     rout: "Taxis",
+  },
+];
+export const visas = [
+  {
+    countryAR: "الإمارات",
+    countryEN: "UAE",
+    countryRU: "ОАЭ",
+    durationAR: "يتوفر شهر / شهرين",
+    durationEN: "Available for 1 or 2 months",
+    durationRU: "Доступно на 1 или 2 месяца",
+    requirementsAR: "المطلوب صورة جواز سفر ملونة دقة عالية + صورة شخصية",
+    requirementsEN:
+      "High-resolution colored passport photo + personal photo required",
+    requirementsRU:
+      "Требуется цветная фотография паспорта высокого разрешения + личное фото",
+    descriptionAR: "سرعة وانجاز في العمل - أسعار رائعة - خدمات احترافية",
+    descriptionEN: "Fast processing - Great prices - Professional services",
+    descriptionRU:
+      "Быстрое оформление - Отличные цены - Профессиональные услуги",
+    image: "/images/uae.webp",
+  },
+  {
+    countryAR: "مصر",
+    countryEN: "Egypt",
+    countryRU: "Египет",
+    durationAR: "موافقة دخول الأراضي المصرية",
+    durationEN: "Entry approval for Egypt",
+    durationRU: "Одобрение на въезд в Египет",
+    requirementsAR: "المطلوب صورة جواز سفر ملونة دقة عالية + صورة شخصية",
+    requirementsEN:
+      "High-resolution colored passport photo + personal photo required",
+    requirementsRU:
+      "Требуется цветная фотография паспорта высокого разрешения + личное фото",
+    descriptionAR: "سريعة / بطيئة - لا تتردد في الاستفسار عن أسعارنا",
+    descriptionEN:
+      "Fast/slow processing - Don't hesitate to inquire about our prices",
+    descriptionRU:
+      "Быстрое/медленное оформление - Не стесняйтесь узнать наши цены",
+    image: "/images/egypt.webp",
+  },
+  {
+    countryAR: "الأردن",
+    countryEN: "Jordan",
+    countryRU: "Иордания",
+    durationAR: "سياحية / موعد سفارة / امتحان لغة او دورات تعليمية",
+    durationEN:
+      "Tourist / Embassy appointment / Language test or educational courses",
+    durationRU:
+      "Туристическая / Встреча в посольстве / Языковой тест или образовательные курсы",
+    requirementsAR: "المطلوب صورة جواز سفر ملونة دقة عالية + صورة شخصية",
+    requirementsEN:
+      "High-resolution colored passport photo + personal photo required",
+    requirementsRU:
+      "Требуется цветная фотография паспорта высокого разрешения + личное фото",
+    descriptionAR: "أسعار مناسبة وإصدار سريع",
+    descriptionEN: "Affordable prices",
+    descriptionRU: "Affordable prices",
+    image: "/images/jordan.webp",
+  },
+  {
+    countryAR: "إندونيسيا",
+    countryEN: "Indonesia",
+    countryRU: "Индонезия",
+    durationAR: "سياحية مرة واحدة / متعددة الدخول / عمل",
+    durationEN: "Single-entry tourist / Multiple-entry tourist / Work",
+    durationRU:
+      "Однократная туристическая / Многократная туристическая / Рабочая",
+    requirementsAR: "المطلوب صورة جواز سفر ملونة دقة عالية + صورة شخصية",
+    requirementsEN:
+      "High-resolution colored passport photo + personal photo required",
+    requirementsRU:
+      "Требуется цветная фотография паспорта высокого разрешения + личное фото",
+    descriptionAR: "مدة إنجاز سريعة - أسعار مميزة",
+    descriptionEN: "Fast processing time - Great prices",
+    descriptionRU: "Быстрое оформление - Отличные цены",
+    image: "/images/indonesia.webp",
+  },
+  {
+    countryAR: "شنغن",
+    countryEN: "Schengen",
+    countryRU: "Шенген",
+    durationAR: "",
+    durationEN: "",
+    durationRU: "",
+    requirementsAR:
+      "المطلوب صورة جواز سفر ملونة دقة عالية + صورة شخصية + صورة الإقامة + كشف حساب بنكي",
+    requirementsEN:
+      "High-resolution colored passport photo + personal photo + residence permit + bank statement required",
+    requirementsRU:
+      "Требуется цветная фотография паспорта высокого разрешения + личное фото + вид на жительство + выписка из банка",
+    descriptionAR: "لا تتردد بالتواصل معنا للاستفسار عن المزيد",
+    descriptionEN: "Feel free to contact us for more information",
+    descriptionRU:
+      "Не стесняйтесь связаться с нами для получения дополнительной информации",
+    image: "/images/schengen.webp",
+  },
+  {
+    countryAR: "تركيا",
+    countryEN: "Turkey",
+    countryRU: "Турция",
+    durationAR: "",
+    durationEN: "",
+    durationRU: "",
+    requirementsAR:
+      "المطلوب صورة جواز سفر ملونة دقة عالية + صورة شخصية + صورة الإقامة + كشف حساب بنكي",
+    requirementsEN:
+      "High-resolution colored passport photo + personal photo + residence permit + bank statement required",
+    requirementsRU:
+      "Требуется цветная фотография паспорта высокого разрешения + личное фото + вид на жительство + выписка из банка",
+    descriptionAR: "",
+    descriptionEN: "",
+    descriptionRU: "",
+    image: "/images/turkey.webp",
+  },
+  {
+    countryAR: "قطر",
+    countryEN: "Qatar",
+    countryRU: "Катар",
+    durationAR: "سريعة و بطيئة",
+    durationEN: "Fast and slow processing",
+    durationRU: "Быстрое и медленное оформление",
+    requirementsAR: "المطلوب صورة جواز سفر ملونة دقة عالية + صورة شخصية",
+    requirementsEN:
+      "High-resolution colored passport photo + personal photo required",
+    requirementsRU:
+      "Требуется цветная фотография паспорта высокого разрешения + личное фото",
+    descriptionAR: "أسعار مناسبة - خدمات احترافية - لتفاصيل اكثر تواصل معنا",
+    descriptionEN:
+      "Affordable prices - Professional services - For more details contact us",
+    descriptionRU:
+      "Доступные цены - Профессиональные услуги - Свяжитесь с нами для получения дополнительной информации",
+    image: "/images/qatar.webp",
+  },
+  {
+    countryAR: "السعودية",
+    countryEN: "Saudi Arabia",
+    countryRU: "Саудовская Аравия",
+    durationAR: "العمرة",
+    durationEN: "Umrah",
+    durationRU: "Умра",
+    requirementsAR:
+      "المطلوب صورة جواز سفر ملونة دقة عالية + صورة شخصية + صورة الإقامة",
+    requirementsEN:
+      "High-resolution colored passport photo + personal photo + residence permit required",
+    requirementsRU:
+      "Требуется цветная фотография паспорта высокого разрешения + личное фото + вид на жительство",
+    descriptionAR: "",
+    descriptionEN: "",
+    descriptionRU: "",
+    image: "/images/saudi.webp",
+  },
+  {
+    countryAR: "فيز طلابية",
+    countryEN: "Student Visas",
+    countryRU: "Студенческие визы",
+    durationAR: "",
+    durationEN: "",
+    durationRU: "",
+    requirementsAR: "",
+    requirementsEN: "",
+    requirementsRU: "",
+    descriptionAR: "روسيا 🇷🇺 ألمانيا 🇩🇪 ماليزيا 🇲🇾",
+    descriptionEN: "Russia 🇷🇺 Germany 🇩🇪 Malaysia 🇲🇾",
+    descriptionRU: "Россия 🇷🇺 Германия 🇩🇪 Малайзия 🇲🇾",
+    image: "/images/student.webp",
   },
 ];

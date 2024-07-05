@@ -71,15 +71,12 @@ const Partners = ({ dic, data, title }: PartnersProps) => {
           }
 
           return (
-            <div
-              key={index}
-              className="p-4"
-            >
+            <div key={index} className="p-4">
               <div className="bg-gray-200 border rounded-lg shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg h-full flex flex-col justify-center items-center overflow-hidden">
                 <div className="bg-white w-full">
                   <Image
                     loading="lazy"
-                    quality={20}
+                    quality={10}
                     width={400}
                     height={200}
                     className="rounded-t-lg aspect-video object-contain"
@@ -87,11 +84,11 @@ const Partners = ({ dic, data, title }: PartnersProps) => {
                     alt={title}
                   />
                 </div>
-                <div className="p-5 flex-grow flex flex-col justify-between h-28">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-[#11407c] text-center">
+                <div className="p-4 flex-grow flex flex-col justify-between h-28">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-primary text-center">
                     {title}
                   </h5>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
+                  <p className="mb-3 font-normal text-primary dark:text-gray-400"></p>
                 </div>
               </div>
             </div>

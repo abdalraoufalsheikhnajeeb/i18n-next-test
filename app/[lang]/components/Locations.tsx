@@ -29,7 +29,7 @@ const Locations: NextPage<LocationsProps> = async ({ params: { lang } }) => {
     locationDetails:
       "Hapag-Lloyd building - Road - القرهود - دبي - الإمارات العربية المتحدة",
     phoneNumber: "+971545866066",
-    addClass: "bg-gradient2",
+    addClass: "",
     whatsLink: "https://wa.me/971545866066",
   };
 
@@ -49,12 +49,12 @@ const Locations: NextPage<LocationsProps> = async ({ params: { lang } }) => {
     locationName: "Syria Office",
     locationDetails: "دمشق ,البرامكة, خلف الهجرة والجوازات مقابل كليّة الفنون",
     phoneNumber: "+963950026610",
-    addClass: "bg-gradient2",
+    addClass: "",
     whatsLink: "https://wa.me/971545866066",
   };
 
   return (
-    <main className="flex bg-white flex-col items-center justify-center min-h-[100dvh] py-2 bg-gradient2">
+    <main className="flex  flex-col items-center justify-center min-h-[100dvh] py-2 ">
       <br />
 
       <AnTitle title={dic.OurLocations} />

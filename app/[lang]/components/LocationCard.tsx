@@ -131,10 +131,9 @@ const LocationCard: React.FC<LocationCardProps> = ({
       <div className="max-w-7xl mx-auto  rounded-lg overflow-hidden my-4">
         <div className="flex justify-center  items-center p-4">
           <Image
-          width={400}
-          height={200}
-          quality={20}
-          
+            width={400}
+            height={200}
+            quality={20}
             src={flagSrc}
             alt={`${locationName} flag`}
             className="w-20  mr-4"
@@ -144,31 +143,27 @@ const LocationCard: React.FC<LocationCardProps> = ({
         <Link href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
           <div className="flex  items-center pt-12">
             <Image
-            width={400}
-            height={200}
-            quality={20}
-            
+              width={400}
+              height={200}
+              quality={20}
               src="/images/location.webp"
               alt={`${locationName} flag`}
               className="w-16  mr-4"
             />
-            <p className="text-2xl text-gray-700 font-bold">
-              {locationDetails}
-            </p>
+            <p className="text-2xl text-primary font-bold">{locationDetails}</p>
           </div>
         </Link>
         <Link href={whatsLink}>
           <div className="flex  items-center">
             <Image
-            width={400}
-            height={200}
-            quality={20}
-            
+              width={400}
+              height={200}
+              quality={20}
               src="/images/phone.webp"
               alt={`${locationName} flag`}
               className="w-16  mr-4"
             />
-            <p className="text-2xl  text-gray-700 font-bold">{phoneNumber}</p>
+            <p className="text-2xl  text-primary font-bold">{phoneNumber}</p>
           </div>
         </Link>
 
@@ -177,10 +172,9 @@ const LocationCard: React.FC<LocationCardProps> = ({
             <div key={index} className="px-2">
               {" "}
               <Image
-              width={400}
-              height={200}
-              quality={20}
-              
+                width={400}
+                height={200}
+                quality={20}
                 src={image}
                 alt={`Office ${index + 1}`}
                 className="w-full h-64 object-cover"
