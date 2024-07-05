@@ -6,7 +6,7 @@ import { getDictionary } from "../../get-dictionary";
 import Navbar from "./components/NavBar"; 
 import { Tajawal } from "next/font/google";
 import Footer from "./components/Footer";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 // Importing Tajawal for Arabic with weights 400 and 700
 const tajawal = Tajawal({ subsets: ["latin", "arabic"], weight: ["400", "700", "900"] });
 
