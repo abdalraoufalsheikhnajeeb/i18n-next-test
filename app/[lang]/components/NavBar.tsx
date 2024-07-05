@@ -40,16 +40,14 @@ const Navbar = ({
 
   const [selectedPageIndex, setSelectedPageIndex] = useState(0);
   const pathname = usePathname();
-  console.log("pathname",pathname )
+  console.log("pathname", pathname);
   return (
     <nav
-      className={`
-				
-			 bg-white backdrop-brightness-125 h-20 w-full px-[5vw] py-2 flex items-center top-0 justify-between z-[100] fixed`}
+      className={`bg-gray-100 backdrop-brightness-125 h-20 w-full px-[5vw] py-2 flex items-center top-0 justify-between z-[100] fixed`}
     >
       <Image
         loading="lazy"
-        quality={20}
+        quality={1}
         className="flex-shrink-0 h-full   "
         width={100}
         height={80}
@@ -60,50 +58,42 @@ const Navbar = ({
       <div className="hidden lg:flex ms-10  items-baseline space-x-4">
         <Link
           className={`text-primary text-xl z-20 relative hover:bg-primary-500/40  px-3 py-2 rounded-md  ${
-            pathname === `/${lang}` ? "underline underline-offset-[12px] font-bold" : ""
+            pathname === `/${lang}`
+              ? "underline underline-offset-[12px] font-bold"
+              : ""
           }`}
           href={`/${lang}`}
         >
           {dic?.Home}
         </Link>
-        {/* <Link
-          className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
-            pathname === "/about" ? "active" : ""
-          }`}
-          href={`/${lang}/ourTours`}
-        >
-          {dic?.ourTours}
-        </Link> */}
         <Link
           className={`text-primary text-xl z-20 relative hover:bg-primary-500/40  px-3 py-2 rounded-md  ${
-            pathname === `/${lang}/about-us` ? "underline underline-offset-8 font-bold" : ""
+            pathname === `/${lang}/about-us`
+              ? "underline underline-offset-8 font-bold"
+              : ""
           }`}
           href={`/${lang}/about-us`}
         >
           {dic?.aboutUs}
         </Link>
+        <Link
+         className={`text-primary text-xl z-20 relative hover:bg-primary-500/40  px-3 py-2 rounded-md  ${
+          pathname === `/${lang}/WorldClock`
+            ? "underline underline-offset-8 font-bold"
+            : ""
+        }`}
+          href={`/${lang}/WorldClock`}
+        >
+          <span>{dic.worldClock}</span>
+        </Link>
       </div>
       <div className="flex items-center h-14 gap-4">
-        <Link className="flex gap-2 justify-end items-center font-bold " href={`/${lang}/WorldClock`}>
-        <Image
-        loading="lazy"
-        quality={1}
-        className="flex-shrink-0 h-10"
-        width={50}
-        height={50}
-        src="/images/clock.svg"
-        alt="clock"
-      />
-        <span>{dic.worldClock}</span>
-        </Link>
         <LocaleSwitcher />
 
         <Image
           loading="lazy"
-          quality={20}
-          className={`cursor-pointer ${
-            isBurgerOpen && "h-16 w-16"
-          } shrink-0  z-10 -me-2 flex lg:hidden`}
+          quality={1}
+          className={`cursor-pointer h-10 shrink-0  z-10 -me-2 flex lg:hidden`}
           onClick={toggleBurger}
           src={isBurgerOpen ? "/images/Cart.svg" : "/images/burger_menu.svg"}
           width={50}
@@ -112,37 +102,37 @@ const Navbar = ({
         />
       </div>
       {isBurgerOpen && (
-        <>
-          <div className="nav-items-container">
+        
+          <div className="flex bg-white w-screen h-screen flex-col fixed top-[60vh] left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-4 justify-center items-center z-50">
             <Link
-              className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
+              className={`text-primary text-xl z-20 relative hover:bg-primary-500/40 hover:text-primary px-3 py-2 rounded-md  ${
                 pathname === "/" ? "active" : ""
               }`}
               href={`/${lang}`}
-              onClick={()=> setIsBurgerOpen(false)}
+              onClick={() => setIsBurgerOpen(false)}
             >
               {dic?.Home}
             </Link>
             <Link
-              className={`text-white text-xl z-20 relative hover:bg-primary-500/40 hover:text-white px-3 py-2 rounded-md  ${
+              className={`text-primary text-xl z-20 relative hover:bg-primary-500/40 hover:text-primary px-3 py-2 rounded-md  ${
                 pathname === "/about-us" ? "active" : ""
               }`}
               href={`/${lang}/about-us`}
-              onClick={()=> setIsBurgerOpen(false)}
+              onClick={() => setIsBurgerOpen(false)}
             >
               {dic?.aboutUs}
             </Link>
+            <Link
+             className={`text-primary text-xl z-20 relative hover:bg-primary-500/40 hover:text-primary px-3 py-2 rounded-md  ${
+              pathname === `/${lang}/WorldClock` ? "active" : ""
+            }`}
+              href={`/${lang}/WorldClock`}
+            >
+             
+              <span>{dic.worldClock}</span>
+            </Link>
           </div>
-          <Image
-            loading="lazy"
-            quality={20}
-            src={`/images/hero2M.webp`}
-            className="blurred-background"
-            width={10}
-            height={10}
-            alt="language"
-          />
-        </>
+        
       )}
     </nav>
   );

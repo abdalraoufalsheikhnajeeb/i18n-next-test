@@ -187,7 +187,7 @@ const LocationCard: React.FC<LocationCardProps> = ({
             href={googleMapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full text-center mt-4 bg-accent text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300"
+            className="block w-full text-center mt-4 bg-litePrimary text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300"
           >
             FindUs on Google Maps
           </Link>

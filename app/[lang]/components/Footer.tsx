@@ -10,7 +10,7 @@ export default async function Footer({
   const dic = await getDictionary(lang);
   return (
     <footer
-      className={`footer pt-10 flex pb-4 justify-center items-center flex-col gap-4 w-full`}
+      className={`footer pt-10 flex pb-4 justify-center items-center flex-col  w-full`}
     >
       <span className="text-3xl text-primary ">{dic?.followUs}</span>
       <div className="flex gap-4 p-4 items-center justify-center">

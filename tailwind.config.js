@@ -11,14 +11,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#11407c',
-        accent: '#cc9c21',
+        primary: "#1E4380",
+        litePrimary: "#3b86ff",
+        accent: "#9c8749",
       },
-      // backgroundImage: {
-      //   'hero': "url('/images/hero.webp')",
-      //   'hero2': "url('/images/hero2.webp')",
-      // },
     },
   },
   plugins: [],
-}
+};

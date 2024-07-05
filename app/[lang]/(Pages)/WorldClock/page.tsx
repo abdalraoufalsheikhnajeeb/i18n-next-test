@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Locale } from "../../../../i18n-config";
 import { timeZones } from "../../data";
 import AnTitle from "../../components/AnTitle";
-
+import Image from "next/image";
 
 interface Time {
   [key: string]: string;
@@ -37,23 +37,34 @@ const WorldClock = ({ params: { lang } }: { params: { lang: Locale } }) => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 lg:px-16 pt-28">
-      <AnTitle title="World Clock"/>
+    <div className="container mx-auto px-4 lg:px-16 pt-28 ">
+      <AnTitle title="World Clock" />
 
-      <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-4">
+      <div className="flex flex-wrap gap-4 items-center justify-center ">
         {timeZones.map((zone) => (
           <div
             key={zone.nameEN}
-            className="bg-white shadow rounded-lg p-3 text-center"
+            className="bg-white shadow-lg rounded-lg p-3 text-center w-60 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <h2 className="text-2xl  text-primary font-semibold mb-2">
-              {lang === "en"
-                ? zone.nameEN
-                : lang === "ar"
-                ? zone.nameAR
-                : zone.nameRU}
-            </h2>
-            <p className="text-xl text-blue-600">{times[zone.nameEN]}</p>
+            <div className="flex items-center">
+              <Image
+                loading="lazy"
+                quality={1}
+                className="flex-shrink-0 h-10 me-4"
+                width={50}
+                height={50}
+                src="/images/clock.svg"
+                alt="clock"
+              />
+              <h2 className="text-2xl font-bold text-primary mb-2">
+                {lang === "en"
+                  ? zone.nameEN
+                  : lang === "ar"
+                  ? zone.nameAR
+                  : zone.nameRU}
+              </h2>
+            </div>
+            <p className="text-xl text-litePrimary">{times[zone.nameEN]}</p>
           </div>
         ))}
       </div>
