@@ -73,10 +73,10 @@ export default async function Home({
             </div>
           </div>
         </header>
-        <section className="w-screen flex flex-col items-center gap-4 custombg">
+        <section className="w-screen flex flex-col items-center">
           <AnTitle title={dic?.someProjects} />
 
-          <div className="flex flex-wrap justify-center items-center gap-8 p-12">
+          <div className="flex flex-wrap justify-center items-center gap-8 px-4 lg:px-12 pt-4 ">
             {ourProjects.map((card) => {
               let title;
 
