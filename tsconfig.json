@@ -27,6 +27,6 @@
     "**/*.tsx",
     "next.config.js",
     ".next/types/**/*.ts"
-, "app/[lang]/Services/Visas", "app/[lang]/Services/Taxis"  ],
+, "app/[lang]/Services/visas", "app/[lang]/Services/Taxis"  ],
   "exclude": ["node_modules"]
 }

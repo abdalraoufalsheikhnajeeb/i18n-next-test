@@ -139,14 +139,14 @@ export const ourProjects = [
     titleen: "Hotel reservations",
     titlear: "حجوزات الفنادق",
     titleru: "Бронирование отелей",
-    rout: "Hotel",
+    rout: "Hotels",
   },
   {
     id: 8,
     titleen: "Travel visas",
     titlear: "تأشيرات السفر",
     titleru: "Туристические визы",
-    rout: "Visas",
+    rout: "visas",
   },
   {
     id: 9,
@@ -167,7 +167,7 @@ export const ourProjects = [
     titleen: "Honeymoon trips",
     titlear: "رحلات شهر العسل",
     titleru: "Свадебные путешествия",
-    rout: "Honeymoon",
+    rout: "honeymoon",
   },
   {
     id: 12,
